@@ -1,5 +1,4 @@
 import Deck, { VERSION } from './reveal.js'
-
 /**
  * Expose the Reveal class to the window. To create a
  * new instance:
@@ -11,7 +10,6 @@ import Deck, { VERSION } from './reveal.js'
  * });
  */
 let Reveal = Deck;
-
 
 /**
  * The below is a thin shell that mimics the pre 4.0
