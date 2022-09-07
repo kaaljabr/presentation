@@ -37,11 +37,16 @@
 					</aside>
 				</section>
 				<section>
-					<h2>This slide has some speaker notes</h2>
-					<aside class="notes">
-						These are the speaker notes.
-						They are only visible in a separate window after pressing the s key.
-					</aside>
+					<section>
+						<h2>This slide has some speaker notes</h2>
+						<aside class="notes">
+							These are the speaker notes.
+							They are only visible in a separate window after pressing the s key.
+						</aside>
+					</section>
+					<section>
+						<h2>Vertical Slide</h2>
+					</section>
 				</section>
 				<section>
 					<h2>Final Slide</h2>
@@ -62,7 +67,13 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				// Add your config here:
+				transition: 'convex',
+				transitionSpeed: 'slow',        // slow down slide transitions
+				controlsTutorial: false,        // turn off arrow bumping
+				controlsLayout: 'edges',        // default 'bottom-right'
+				controlsBackArrows: 'visible',  // make previous slide arrow bright instead of faded
+				progress: false,                // turn off progress bar display
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
