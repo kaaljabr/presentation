@@ -1,10 +1,10 @@
 <!doctype html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Presentation</title>
+		<title>AWS Presentation</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -13,39 +13,90 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
+		<link rel="icon" href="/dist/assets/favicon.ico">
 
 	</head>
+	<style>
+		.left {
+			text-align: left;
+		}
+	</style>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<a href="https://revealjs.com">
-						<img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-					</a>
-					<h3>The HTML Presentation Framework</h3>
+					<h3>AWS SA Interview</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+						Match & Link Processor
+					</p>
+					<br>
+					<p>
+						<small>Prepared by <strong>Kareem Aljabr</strong></small>
 					</p>
 				</section>
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-					<aside class="notes">
-						Some extra notes
-					</aside>
+					<h3>What is Match & Link?</h3>
+					<ul>
+						<li class="fragment">
+							Asynchronous process
+						</li>
+						<li class="fragment">
+							Consumes <span style="color: blue">Kafka</span> events produced by guest profile service.
+						</li>
+						<li class="fragment">
+							When a profile is created/updated it searches for a matching profile.
+						</li>
+						<li class="fragment">
+							If found, both profiles will be linked.
+						</li>
+					</ul>
 				</section>
 				<section>
 					<section>
-						<h2>This slide has some speaker notes</h2>
+						<h3>History ⏳</h3>
+						<p class="fragment">How did it all start?</p>
+						<p class="fragment">
+							<small>
+								There was a legacy Node.js service, ms-guest, which was used to proxy SOAP requests to an MDM AE, an IBM product connected to a DB2 database.
+							</small>
+						</p>
+						<p class="fragment">
+							<small>
+								<a href="https://www.ibm.com/downloads/cas/PAA9NDJ9" target="_blank">IBM InfoSphere MDM AE</a> : IBM InfoSphere Master Data Management Advanced Edition
+							</small>
+						</p>
 						<aside class="notes">
-							These are the speaker notes.
-							They are only visible in a separate window after pressing the s key.
+								MDM AE: Delivers data matching, data exploration and visualization for business users
 						</aside>
 					</section>
 					<section>
-						<h2>Vertical Slide</h2>
+						<h3>Issues 😔</h3>
+						<ul>
+							<li class="fragment">
+								written by a team of developers from IBM
+							</li>
+							<li class="fragment">
+								their contracts were <span style="color: red">terminated</span>
+							</li>
+							<li class="fragment">
+								lack of documentation
+							</li>
+							<li class="fragment">
+								multiple endpoints doing the same functionality.
+							</li>
+							<li class="fragment">
+								DB model CRUD operations endpoints exposed.
+							</li>
+							<li class="fragment">
+								difficult to maintain and a low unit test coverage.
+							</li>
+							<li class="fragment">
+								no integration tests.
+							</li>
+						</ul>
+						<aside class="notes">
+							Replaced by a bunch of contractors and employees. For restructuring and cutting cost reasons.
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -68,11 +119,11 @@
 			Reveal.initialize({
 				hash: true,
 				// Add your config here:
-				transition: 'convex',
+				// transition: 'convex',
 				transitionSpeed: 'slow',        // slow down slide transitions
 				controlsTutorial: false,        // turn off arrow bumping
-				controlsLayout: 'edges',        // default 'bottom-right'
-				controlsBackArrows: 'visible',  // make previous slide arrow bright instead of faded
+				// controlsLayout: 'edges',        // default 'bottom-right'
+				 //controlsBackArrows: 'visible',  // make previous slide arrow bright instead of faded
 				progress: false,                // turn off progress bar display
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
