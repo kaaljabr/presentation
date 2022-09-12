@@ -36,31 +36,31 @@
 				</section>
 				<section>
 					<h3>What is Match & Link?</h3>
+					<br>
 					<ul>
 						<li class="fragment">
 							Asynchronous process
 						</li>
 						<li class="fragment">
-							Consumes ⬇️ <span style="color: #1b91ff">Kafka</span> events <span class="fragment">produced ⬆️ by guest profile service.</span>
+							<span style="color: yellow">Consumes Kafka</span> events <span class="fragment"><span style="color: yellow">produced</span> by guest profile service.</span>
 						</li>
 						<li class="fragment">
-							When a profile is <span style="color: greenyellow">created</span>/<span style="color: yellow">updated</span> it searches for a matching 👥 profile.
+							When a profile is <span style="color: yellow">created or updated</span> it searches for a matching profile.
 						</li>
 						<li class="fragment">
-							If found, both profiles will be linked 🖇️.
+							If found, both profiles will be linked.
 						</li>
 					</ul>
 				</section>
 				<section>
 					<section>
 						<h3>History ⏳</h3>
-						<p class="fragment">How did it all start?</p>
-						<p class="fragment">
-							<small>
-								There was a legacy Node.js service, ms-guest, which was used to proxy SOAP requests to an MDM AE, an IBM product connected to a DB2 database.
-							</small>
+						<br>
+						<p>
+							Existing Node.js microservice, <span style="color: yellow">ms-guest</span>, used to proxy SOAP requests to an <span style="color: yellow">IBM MDM AE</span>.
 						</p>
-						<p class="fragment">
+						<br>
+						<p>
 							<small>
 								<a href="https://www.ibm.com/downloads/cas/PAA9NDJ9" target="_blank">IBM InfoSphere MDM AE</a> : IBM InfoSphere Master Data Management Advanced Edition
 							</small>
@@ -70,40 +70,154 @@
 						</aside>
 					</section>
 					<section>
-						<h3>Issues 😔</h3>
+						<h3>Issues Part #1</h3>
+						<br>
 						<ul>
 							<li class="fragment">
-								written by a team of developers from IBM
+								written by a team of developers from IBM, their contracts were <span style="color: red">terminated</span>.
 							</li>
 							<li class="fragment">
-								their contracts were <span style="color: red">terminated</span>
+								Lack of <span style="color: yellow">documentation</span>.
 							</li>
 							<li class="fragment">
-								lack of documentation
+								Difficult to maintain due to low <span style="color: yellow">unit test</span> coverage. And lack of <span style="color: yellow">integration tests</span>.
 							</li>
 							<li class="fragment">
-								multiple endpoints doing the same functionality.
+								<span style="color: yellow">Loose</span> API contracts
 							</li>
 							<li class="fragment">
-								DB model CRUD operations endpoints exposed.
+								<span style="color: yellow">Multiple</span> endpoints with the <span style="color: yellow">same functionality</span>.
 							</li>
 							<li class="fragment">
-								difficult to maintain and a low unit test coverage.
-							</li>
-							<li class="fragment">
-								no integration tests.
+								<span style="color: yellow">DB</span> models CRUD operations endpoints <span style="color: yellow">exposed</span>.
 							</li>
 						</ul>
 						<aside class="notes">
-							Replaced by a bunch of contractors and employees. For restructuring and cutting cost reasons.
+							<p>
+								Replaced by a bunch of contractors and employees. due to restructuring and cutting cost reasons.
+							</p>
+							<p>
+								json payload is not consistent, mobile, web, park and other services call it with different payload format.
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h3>Issues Part #2</h3>
+						<br>
+						<ul>
+							<li class="fragment">
+								Many <span style="color: yellow">performance</span> issues in <span style="color: yellow">production</span>.
+							</li>
+							<li class="fragment">
+								Synchronous <span style="color: yellow">Match & Merge</span>
+							</li>
+							<li class="fragment">
+								Poor design. An <span style="color: yellow">unregistered guest profile</span> is created whenever you land on the website.
+							</li>
+							<li class="fragment">
+								Resulted in creating 100 millions of <span style="color: yellow">ghost profiles</span>.
+							</li>
+						</ul>
+						<aside class="notes">
+							<p>
+								Match & Merge is part of the MDM AE service that used to happen real time when the profile is created or updated.
+							</p>
 						</aside>
 					</section>
 				</section>
 				<section>
-					<h2>Final Slide</h2>
-					<aside class="notes">
-						More notes here
-					</aside>
+					<section>
+						<h3>Guests Dashboard</h3>
+						<br>
+						<p>
+							I created a <span style="color: yellow">UI Dashboard</span> to allow both <span style="color: yellow">QA</span> and <span style="color: yellow">Business</span> teams to test the Match & Link process.
+						</p>
+						<aside class="notes">
+							<p>
+								We had issues related to writing automation tests to validate Match & Link results. Since it's Asynchronous process.
+							</p>
+							<p>
+								At that time was listening to podcasts and one guest was talking about Vue JS. I decided to learn it. I found creating this dashboard
+								a motivation for me to learn it.
+							</p>
+							<p>
+								Deployed on Github Pages to save money and push code faster.
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h3>Create Guest Profile</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/create_guest_profile.png" alt="create guest profile">
+						</p>
+						<aside class="notes">
+							Create a guest profile to validate matching a linking results.
+						</aside>
+					</section>
+					<section>
+						<h3>Validate Match & Link</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/find_orphan_profile.png" alt="find orphan profile">
+						</p>
+						<aside class="notes">
+							Click on find tab to retrieve the profile you created, and validate the match & link outcome.
+						</aside>
+					</section>
+					<section>
+						<h3>Validate Match & Link</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/find_parent_one_linked.png" alt="find one linked profile">
+						</p>
+						<aside class="notes">
+							It might take a few seconds to see the matching result since it's an asynchronous process.
+						</aside>
+					</section>
+					<section>
+						<h3>Validate Match & Link</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/find_parent_profile_two_linked.png" alt="find two linked profiles">
+						</p>
+						<aside class="notes">
+							If you go ahead and create a 3rd profile matching the parent you'd see that in the search result here.
+						</aside>
+					</section>
+					<section>
+						<h3>Validate Match & Link</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/expand_parent_profile.png" alt="expand parent profile">
+						</p>
+						<aside class="notes">
+							<p>
+								You can expand any profile listed here to see more details.
+							</p>
+							<p>
+								We use Experian to standardize addresses to help with matching
+							</p>
+							<p>
+								Standardizing the address happens in the background and data is saved on the marketing document and it's not shared with
+								the guest. There is a score for standardized address when we call experian and we take the highest score if it's 90+%
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h3>Validate Match & Link</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/expand_first_child.png" alt="expand child 1 profile">
+						</p>
+						<aside class="notes">
+							Here this profile matched the parent profile thru EMAIL_COMBO_1 matching rule.
+						</aside>
+					</section>
+					<section>
+						<h3>Validate Match & Link</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/expand_second_child.png" alt="expand child 2 profile">
+						</p>
+						<aside class="notes">
+							Here this profile matched the parent profile thru PHONE_COMBO_1 matching rule.
+						</aside>
+					</section>
+
 				</section>
 			</div>
 		</div>
