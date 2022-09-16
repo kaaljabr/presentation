@@ -25,11 +25,12 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h3>AWS SA Interview</h3>
+					<h2>AWS SA Interview</h2>
+					<br>
+					<br>
 					<p>
 						Match & Link Processor
 					</p>
-					<br>
 					<p>
 						<small>Prepared by <strong>Kareem Aljabr</strong></small>
 					</p>
@@ -51,6 +52,67 @@
 							If a <span style="color: yellow">matching</span> profile is found, both profiles will be <span style="color: yellow">linked</span>.
 						</li>
 					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Core Concept - Scenario 1</h3>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+
+						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link.svg" style="height: 70%;width: 70%;margin: auto;">
+							<!--
+                            { "setup": [
+                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
+                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] }
+                            ]}
+                            -->
+						</div>
+					</section>
+					<section>
+						<h3>Core Concept - Scenario 2</h3>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+
+						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link_parent.svg" style="height: 70%;width: 70%;margin: auto;">
+							<!--
+                            { "setup": [
+                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
+                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] }
+                            ]}
+                            -->
+						</div>
+					</section>
+					<section>
+						<h3>Core Concept - Scenario 3</h3>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
+
+						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link_child.svg" style="height: 70%;width: 70%;margin: auto;">
+							<!--
+                            { "setup": [
+                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
+                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
+                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
+                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] }
+                            ]}
+                            -->
+						</div>
+					</section>
+
 				</section>
 				<section>
 					<section>
@@ -106,7 +168,7 @@
 						<br>
 						<ul>
 							<li class="fragment">
-								Many <span style="color: yellow">performance</span> issues in <span style="color: #5f5f45">production</span>.
+								Many <span style="color: yellow">performance</span> issues in <span style="color: yellow">production</span>.
 							</li>
 							<li class="fragment">
 								Synchronous <span style="color: yellow">Match & Merge</span>
@@ -148,7 +210,7 @@
 					<section>
 						<h3>Create Guest Profile</h3>
 						<p>
-							<img src="dist/assets/guests-dashboard/create_guest_profile.png" alt="create guest profile">
+							<img src="dist/assets/guests-dashboard/create_guest_profile.png" alt="create guest profile" style="max-width: 100%;height: auto;">
 						</p>
 						<aside class="notes">
 							Create a guest profile to validate matching a linking results.
@@ -217,6 +279,15 @@
 							Here this profile matched the parent profile thru PHONE_COMBO_1 matching rule.
 						</aside>
 					</section>
+					<section>
+						<h3>Validate Match & Link Continued</h3>
+						<p>
+							<img src="dist/assets/guests-dashboard/edit_parent_profile.png" alt="edit parent profile">
+						</p>
+						<aside class="notes">
+							You can also edit a profile to validate the update scenario
+						</aside>
+					</section>
 
 				</section>
 			</div>
@@ -226,6 +297,9 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/animate/plugin.js"></script>
+		<script src="plugin/animate/svg.min.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -240,7 +314,7 @@
 				 //controlsBackArrows: 'visible',  // make previous slide arrow bright instead of faded
 				progress: false,                // turn off progress bar display
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAnimate, RevealZoom ]
 			});
 		</script>
 	</body>
