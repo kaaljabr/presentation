@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="825px" preserveAspectRatio="none" style="width:1032px;height:825px;background:#FFFFFF;" version="1.1" viewBox="0 0 1032 825" width="1032px" zoomAndPan="magnify"><defs/><g><!--MD5=[9681dc6e01e10c6b4fe06895ae94f592]
+cluster UI--><g id="cluster_UI"><polygon fill="#F8E7C0" points="16,16,26,6,725,6,725,115,715,125,16,125,16,16" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="715" x2="725" y1="16" y2="6"/><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="715" y1="16" y2="16"/><line style="stroke:#181818;stroke-width:1.0;" x1="715" x2="715" y1="16" y2="125"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="15" x="359" y="32.5352">UI</text></g><!--MD5=[1feb5a0622a9211287ff216bc4a47e33]
+cluster ldap--><g id="cluster_ldap"><polygon fill="#DEB887" points="517,440,527,430,716,430,716,562,706,572,517,572,517,440" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="706" x2="716" y1="440" y2="430"/><line style="stroke:#181818;stroke-width:1.0;" x1="517" x2="706" y1="440" y2="440"/><line style="stroke:#181818;stroke-width:1.0;" x1="706" x2="706" y1="440" y2="572"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="44" x="590.5" y="456.5352">«ldap»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38" x="593.5" y="473.0234">LDAP</text></g><!--MD5=[f72e8905bd6e3a370cb106f12698fafd]
+cluster Microservices--><g id="cluster_Microservices"><polygon fill="#48D1CC" points="114,241,124,231,472,231,472,798.5,462,808.5,114,808.5,114,241" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="462" x2="472" y1="241" y2="231"/><line style="stroke:#181818;stroke-width:1.0;" x1="114" x2="462" y1="241" y2="241"/><line style="stroke:#181818;stroke-width:1.0;" x1="462" x2="462" y1="241" y2="808.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="240" y="257.5352">Microservices</text></g><!--MD5=[155688ac9c6405cb28b411556fc5fed5]
+cluster guests_package--><g id="cluster_guests_package"><path d="M304.5,279 L384.5,279 A3.75,3.75 0 0 1 387,281.5 L394,301.4883 L445.5,301.4883 A2.5,2.5 0 0 1 448,303.9883 L448,566 A2.5,2.5 0 0 1 445.5,568.5 L304.5,568.5 A2.5,2.5 0 0 1 302,566 L302,281.5 A2.5,2.5 0 0 1 304.5,279 " fill="#F0E442" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="302" x2="394" y1="301.4883" y2="301.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="79" x="306" y="294.5352">ms-guests</text></g><!--MD5=[6c2879b2d2bb996634356ed1d183dc5e]
+cluster wallet_package--><g id="cluster_wallet_package"><path d="M140.5,279 L216.5,279 A3.75,3.75 0 0 1 219,281.5 L226,301.4883 L275.5,301.4883 A2.5,2.5 0 0 1 278,303.9883 L278,566 A2.5,2.5 0 0 1 275.5,568.5 L140.5,568.5 A2.5,2.5 0 0 1 138,566 L138,281.5 A2.5,2.5 0 0 1 140.5,279 " fill="#F0E442" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="138" x2="226" y1="301.4883" y2="301.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="75" x="142" y="294.5352">ms-wallet</text></g><!--MD5=[2e5a3d3009757c2339f40e553b0ed60f]
+cluster kafka--><g id="cluster_kafka"><path d="M761,439 L940,439 C945,439 945,503.5 945,503.5 C945,503.5 945,568 940,568 L761,568 C756,568 756,503.5 756,503.5 C756,503.5 756,439 761,439 " fill="#FA8072" style="stroke:#181818;stroke-width:1.0;"/><path d="M940,439 C935,439 935,503.5 935,503.5 C935,568 940,568 940,568 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="59" x="821" y="454.5352">«Queue»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="801.5" y="471.0234">Kafka Cluster</text></g><!--MD5=[d40e80ed04d21816f83ec4d22e72d19f]
+cluster match_link--><g id="cluster_match_link"><polygon fill="#FFC0CB" points="800,266,810,256,1015,256,1015,380,1005,390,800,390,800,266" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="1005" x2="1015" y1="266" y2="256"/><line style="stroke:#181818;stroke-width:1.0;" x1="800" x2="1005" y1="266" y2="266"/><line style="stroke:#181818;stroke-width:1.0;" x1="1005" x2="1005" y1="266" y2="390"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="81" x="863" y="282.5352">«Processor»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94" x="856.5" y="299.0234">Match &amp; Link</text></g><!--MD5=[d0e2a5f97e7b84b4a52fc47ac0121b09]
+entity android--><g id="elem_android"><rect fill="#F1F1F1" height="62.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="101" x="392.5" y="46"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="473.5" y="51"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="471.5" y="53"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="471.5" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="407.5" y="79.5352">«mobile»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="410" y="96.0234">Android</text></g><!--MD5=[be09490d94791046e3419ff8f61a31bb]
+entity ios--><g id="elem_ios"><rect fill="#F1F1F1" height="62.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="101" x="256.5" y="46"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="337.5" y="51"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="335.5" y="53"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="335.5" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="271.5" y="79.5352">«mobile»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="23" x="290.5" y="96.0234">iOS</text></g><!--MD5=[08af8945a84acfe1eabc0963aa87c412]
+entity web--><g id="elem_web"><rect fill="#F1F1F1" height="62.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189" x="32.5" y="46"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="201.5" y="51"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="199.5" y="53"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="199.5" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="88" x="78" y="79.5352">«public web»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="47.5" y="96.0234">universalorlando.com</text></g><!--MD5=[95dd478b86db0b9ac73366f6568c523e]
+entity teammember--><g id="elem_teammember"><rect fill="#F1F1F1" height="62.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="180" x="529" y="46"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="689" y="51"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="687" y="53"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="687" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="99" x="564.5" y="79.5352">«internal web»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="544" y="96.0234">Team Member Tools</text></g><!--MD5=[85d3f8ffd301b42283bb9f0f23821f75]
+entity ldap_dir--><g id="elem_ldap_dir"><path d="M563,494 L604,494 A3.75,3.75 0 0 1 606.5,496.5 L613.5,515 L689,515 A2.5,2.5 0 0 1 691.5,517.5 L691.5,545.9883 A2.5,2.5 0 0 1 689,548.4883 L563,548.4883 A2.5,2.5 0 0 1 560.5,545.9883 L560.5,496.5 A2.5,2.5 0 0 1 563,494 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="560.5" x2="613.5" y1="515" y2="515"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="570.5" y="535.5352">LDAP Directory</text></g><!--MD5=[733ebafc4ddc0c6f83011f92b027dea0]
+entity couch_db--><g id="elem_couch_db"><path d="M248,740.5 C248,730.5 291,730.5 291,730.5 C291,730.5 334,730.5 334,740.5 L334,782.4766 C334,792.4766 291,792.4766 291,792.4766 C291,792.4766 248,792.4766 248,782.4766 L248,740.5 " fill="#FFFFF0" style="stroke:#000000;stroke-width:0.5;"/><path d="M248,740.5 C248,750.5 291,750.5 291,750.5 C291,750.5 334,750.5 334,740.5 " fill="none" style="stroke:#000000;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="59" x="261.5" y="768.0352">«NoSQL»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="258" y="784.5234">Couch DB</text></g><!--MD5=[d1b457bbd51b46fbb259e557b99e92ae]
+entity guests_internal--><g id="elem_guests_internal"><ellipse cx="375" cy="343" fill="#3D8CFF" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="348.5" y="373.5352">internal</text></g><!--MD5=[da13416faa82b4a43890a3a8fce00ce4]
+entity ms_guests--><g id="elem_ms_guests"><rect fill="#F1F1F1" height="62.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="318.5" y="489.5"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="411.5" y="494.5"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="409.5" y="496.5"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="409.5" y="500.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="339.5" y="523.0352">«service»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="333.5" y="539.5234">ms-guests</text></g><!--MD5=[ba5a8998a04e4bdc0dbbcbd792069ae3]
+entity wallet_internal--><g id="elem_wallet_internal"><ellipse cx="218" cy="343" fill="#3D8CFF" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="191.5" y="373.5352">internal</text></g><!--MD5=[c01b3adff0033688fb146172ea200fae]
+entity ms_wallet--><g id="elem_ms_wallet"><rect fill="#F1F1F1" height="62.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="108" x="154" y="489.5"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="242" y="494.5"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="240" y="496.5"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="240" y="500.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="61" x="172.5" y="523.0352">«service»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="169" y="539.5234">ms-wallet</text></g><!--MD5=[f376dbea7e5c36b1eb7bbb8222c0f7c0]
+entity kafka_brokers--><g id="elem_kafka_brokers"><rect fill="#F1F1F1" height="46.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="122" x="799" y="498"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="901" y="503"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="899" y="505"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="899" y="509"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="814" y="531.5352">Brokers 1..3</text></g><!--MD5=[9e192f6c6858cb294884017bf1dabec8]
+entity consumer_1--><g id="elem_consumer_1"><rect fill="#F1F1F1" height="46.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="148" x="843" y="320"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="971" y="325"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="969" y="327"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="969" y="331"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="858" y="353.5352">Consumers 1..5</text></g><!--MD5=[7b30460008fc71f9986330c33ee2d290]
+entity gateway--><g id="elem_gateway"><ellipse cx="375" cy="192" fill="#9ACD32" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="347" y="222.5352">gateway</text></g><!--MD5=[58fe32485a25c6dfb2b4de3b02168686]
+entity authenticate--><g id="elem_authenticate"><ellipse cx="538" cy="343" fill="#FF0000" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="495.5" y="373.5352">authenticate</text></g><!--MD5=[12859362b8ca673b871b8ce76de6e694]
+entity kafka_produce--><g id="elem_kafka_produce"><ellipse cx="524" cy="641.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="495.5" y="672.0352">produce</text></g><!--MD5=[16d4717972d1cc757f2ff8148a7968ae]
+entity kafka_consume--><g id="elem_kafka_consume"><ellipse cx="764" cy="343" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="733" y="373.5352">consume</text></g><!--MD5=[741f803b0826940167ea2a9cc6fd3e1f]
+entity data_lake--><g id="elem_data_lake"><polygon fill="#F1F1F1" points="711,179,721,169,817,169,817,205.4883,807,215.4883,711,215.4883,711,179" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="807" x2="817" y1="179" y2="169"/><line style="stroke:#181818;stroke-width:0.5;" x1="711" x2="807" y1="179" y2="179"/><line style="stroke:#181818;stroke-width:0.5;" x1="807" x2="807" y1="179" y2="215.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="726" y="202.5352">Data Lake</text></g><!--MD5=[45f2ff5085d056267707c7d276a8e149]
+link guests_internal to ms_guests--><g id="link_guests_internal_ms_guests"><path d="M375,352.02 C375,375.96 375,447.82 375,489.39 " fill="none" id="guests_internal-ms_guests" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1c8b8e41eec736a525d44e0fb642894e]
+link wallet_internal to ms_wallet--><g id="link_wallet_internal_ms_wallet"><path d="M217.54,352.02 C216.18,375.96 212.1,447.82 209.74,489.39 " fill="none" id="wallet_internal-ms_wallet" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[3728e85fd39c56197067781e363ec437]
+link gateway to guests_internal--><g id="link_gateway_guests_internal"><path d="M375,201.01 C375,224.05 375,290.93 375,323.61 " fill="none" id="gateway-to-guests_internal" style="stroke:#181818;stroke-width:1.0;"/><path d="M383.4572,330.8718 A9,9 0 0 0 366.5428 330.8718" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[5e464d3c789b7cb478c44ebcb3d22016]
+link gateway to wallet_internal--><g id="link_gateway_wallet_internal"><path d="M365.6,195.05 C350.8,198.66 321.71,207.28 302,223 C266.2,251.54 239.02,299.23 226.18,324.71 " fill="none" id="gateway-to-wallet_internal" style="stroke:#181818;stroke-width:1.0;"/><path d="M230.6504,334.8132 A9,9 0 0 0 215.4499 327.3942" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[5b0924be97d99f4b42712c7be1e32466]
+link ms_guests to couch_db--><g id="link_ms_guests_couch_db"><path d="M364.19,552.69 C348.59,597 319.82,678.67 303.38,725.34 " fill="none" id="ms_guests-to-couch_db" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="301.64,730.3,308.4175,723.154,303.3108,725.5874,300.8774,720.4807,301.64,730.3" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9f95cd16f260286e55319d7268c9ccae]
+link ms_wallet to couch_db--><g id="link_ms_wallet_couch_db"><path d="M218.68,552.69 C234.1,597 262.52,678.67 278.77,725.34 " fill="none" id="ms_wallet-to-couch_db" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="280.49,730.3,281.2883,720.4836,278.8363,725.5814,273.7385,723.1294,280.49,730.3" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[72ec6d1f8a90e168d8cc7d8c78310f59]
+link android to gateway--><g id="link_android_gateway"><path d="M424.42,109.24 C411.8,130.12 395.58,156.96 385.23,174.07 " fill="none" id="android-to-gateway" style="stroke:#181818;stroke-width:1.0;"/><path d="M388.7202,184.6498 A9,9 0 0 0 374.244 175.9012" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[70011d888e820d831589a35534f2f817]
+link ios to gateway--><g id="link_ios_gateway"><path d="M325.58,109.24 C338.2,130.12 354.42,156.96 364.77,174.07 " fill="none" id="ios-to-gateway" style="stroke:#181818;stroke-width:1.0;"/><path d="M375.756,175.9012 A9,9 0 0 0 361.2798 184.6498" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[b6dceaa84534c7aadd69d4ab3c7bab94]
+link web to gateway--><g id="link_web_gateway"><path d="M188.36,109.04 C204.73,117 222.47,125.46 239,133 C280.46,151.91 329.83,172.49 356.19,183.33 " fill="none" id="web-to-gateway" style="stroke:#181818;stroke-width:1.0;"/><path d="M366.0521,178.2269 A9,9 0 0 0 359.6496 193.8828" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[b69de3ebd0ddc99a165fcd5cb896ca40]
+link teammember to gateway--><g id="link_teammember_gateway"><path d="M560.2,109.03 C544.33,117.04 527.09,125.52 511,133 C469.68,152.21 420.26,172.67 393.85,183.41 " fill="none" id="teammember-to-gateway" style="stroke:#181818;stroke-width:1.0;"/><path d="M390.3491,193.942 A9,9 0 0 0 383.9965 178.2658" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[bfa1a27fd83a3f9162138828e961b77b]
+link authenticate to ldap--><g id="link_authenticate_ldap"><path d="M537.41,352.02 C536.7825,360.4925 535.7125,374.9681 534.4558,391.9791 C533.8274,400.4845 533.1524,409.6238 532.4626,418.9635 C532.2902,421.2984 532.1168,423.6458 531.9431,425.999 C531.8562,427.1756 531.7692,428.3536 531.6822,429.5322 " fill="none" id="authenticate-ldap" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7c614c6059d17c678bbabd0113cb2b05]
+link gateway to authenticate--><g id="link_gateway_authenticate"><path d="M384.34,195.13 C399.06,198.85 428.03,207.61 448,223 C485.31,251.76 515.03,299.71 529.11,325.07 " fill="none" id="gateway-to-authenticate" style="stroke:#181818;stroke-width:1.0;"/><path d="M539.8559,327.1503 A9,9 0 0 0 524.9764 335.194" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[ac6a9412f2bebf68d231ccc5a51e3736]
+link kafka to kafka_produce--><g id="link_kafka_kafka_produce"><path d="M755.9824,535.5567 C755.7599,535.9058 755.5332,536.2597 755.3024,536.6182 C754.8406,537.3351 754.3622,538.0701 753.8676,538.8215 C751.8889,541.8269 749.65,545.0925 747.1775,548.495 C737.2875,562.105 723.66,577.905 708,588 C648.81,626.16 561.47,637.12 533.19,639.76 " fill="none" id="kafka-kafka_produce" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a4ad5e6a5bd09490384d70bcf41cdf51]
+link kafka_consume to kafka--><g id="link_kafka_consume_kafka"><path d="M764,352.02 C764,360.4925 764,374.9681 764,391.9791 C764,400.4845 764,409.6238 764,418.9635 C764,423.6333 764,428.3532 764,433.069 C764,434.248 764,435.4267 764,436.6043 C764,437.1931 764,437.7816 764,438.3697 " fill="none" id="kafka_consume-kafka" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[74eadd002092ccd979fdd25de901366a]
+link ms_guests to kafka_produce--><g id="link_ms_guests_kafka_produce"><path d="M413.37,552.52 C443.52,576.49 484.07,608.74 506.77,626.79 " fill="none" id="ms_guests-to-kafka_produce" style="stroke:#181818;stroke-width:1.0;"/><path d="M517.6643,624.648 A9,9 0 0 0 507.1215 637.8748" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[952e41a979291b5538f69302ef16c37c]
+link ms_wallet to kafka_produce--><g id="link_ms_wallet_kafka_produce"><path d="M243.18,552.66 C259.92,565.61 280.87,579.62 302,588 C372.96,616.15 399.5,588.59 472,612.5 C483.98,616.45 496.45,623.07 506.18,628.88 " fill="none" id="ms_wallet-to-kafka_produce" style="stroke:#181818;stroke-width:1.0;"/><path d="M516.7221,625.4826 A9,9 0 0 0 507.79 639.8464" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[9548a49b2833d17758e18684fcade6e2]
+link match_link to kafka_consume--><g id="link_match_link_kafka_consume"><path d="M799.9506,343 C799.45,343 798.9494,343 798.4488,343 C797.4475,343 796.4463,343 795.445,343 C791.44,343 787.435,343 783.43,343 " fill="none" id="match_link-to-kafka_consume" style="stroke:#181818;stroke-width:1.0;"/><path d="M776.3582,351.4572 A9,9 0 0 0 776.3582 334.5428" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[f6db522b5cae85554e792c6f63273eb0]
+link data_lake to kafka_consume--><g id="link_data_lake_kafka_consume"><path d="M764,215.31 C764,244.86 764,296.43 764,323.77 " fill="none" id="data_lake-to-kafka_consume" style="stroke:#181818;stroke-width:1.0;"/><path d="M772.4572,330.7918 A9,9 0 0 0 755.5428 330.7918" fill="none" style="stroke:#181818;stroke-width:1.5;"/></g><!--MD5=[36b36ba833d8f3be2ab4e1926704a881]
+@startuml
+
+skinparam database {
+    backgroundColor Ivory
+    borderColor black
+}
+
+skinparam package {
+    backgroundColor #F0E442
+}
+
+interface gateway #YellowGreen
+interface authenticate #Red
+interface produce as kafka_produce
+interface consume as kafka_consume
+
+node "UI" #Strategy {
+    component "Android" as android <<mobile>>
+    component "iOS" as ios <<mobile>>
+    component "universalorlando.com" as web <<public web>>
+    component "Team Member Tools" as teammember <<internal web>>
+}
+
+node "LDAP" as ldap <<ldap>> #BurlyWood {
+    folder "LDAP Directory" as ldap_dir
+}
+
+node "Microservices" #MediumTurquoise {
+
+    package "ms-guests" as guests_package {
+        interface internal as guests_internal #3D8CFF
+        component "ms-guests" as ms_guests <<service>>
+        guests_internal - - ms_guests
+    }
+    package "ms-wallet" as wallet_package {
+        interface internal as wallet_internal #3D8CFF
+        component "ms-wallet" as ms_wallet <<service>>
+        wallet_internal - - ms_wallet
+    }
+    database "Couch DB" as couch_db <<NoSQL>>
+}
+
+queue "Kafka Cluster" as kafka <<Queue>> #Salmon {
+    component "Brokers 1..3" as kafka_brokers
+}
+
+node "Match & Link" as match_link <<Processor>> #Pink {
+    component "Consumers 1..5" as consumer_1
+}
+
+node "Data Lake" as data_lake
+
+'Gateway'
+gateway - -( guests_internal
+gateway - -( wallet_internal
+
+'Couch'
+ms_guests - -.> couch_db
+ms_wallet - -.> couch_db
+
+'UI'
+android - -( gateway
+ios - -( gateway
+web - -( gateway
+teammember -right-( gateway
+
+'LDAP'
+authenticate - - ldap
+gateway - -( authenticate
+
+'Kafka'
+kafka - - kafka_produce
+kafka -up- kafka_consume
+ms_guests - -( kafka_produce
+ms_wallet - -( kafka_produce
+match_link -right-( kafka_consume
+data_lake -down-( kafka_consume
+
+@enduml
+
+@startuml
+
+skinparam database {
+    backgroundColor Ivory
+    borderColor black
+}
+
+skinparam package {
+    backgroundColor #F0E442
+}
+
+interface gateway #YellowGreen
+interface authenticate #Red
+interface produce as kafka_produce
+interface consume as kafka_consume
+
+node "UI" #Strategy {
+    component "Android" as android <<mobile>>
+    component "iOS" as ios <<mobile>>
+    component "universalorlando.com" as web <<public web>>
+    component "Team Member Tools" as teammember <<internal web>>
+}
+
+node "LDAP" as ldap <<ldap>> #BurlyWood {
+    folder "LDAP Directory" as ldap_dir
+}
+
+node "Microservices" #MediumTurquoise {
+
+    package "ms-guests" as guests_package {
+        interface internal as guests_internal #3D8CFF
+        component "ms-guests" as ms_guests <<service>>
+        guests_internal - - ms_guests
+    }
+    package "ms-wallet" as wallet_package {
+        interface internal as wallet_internal #3D8CFF
+        component "ms-wallet" as ms_wallet <<service>>
+        wallet_internal - - ms_wallet
+    }
+    database "Couch DB" as couch_db <<NoSQL>>
+}
+
+queue "Kafka Cluster" as kafka <<Queue>> #Salmon {
+    component "Brokers 1..3" as kafka_brokers
+}
+
+node "Match & Link" as match_link <<Processor>> #Pink {
+    component "Consumers 1..5" as consumer_1
+}
+
+node "Data Lake" as data_lake
+
+gateway - -( guests_internal
+gateway - -( wallet_internal
+
+ms_guests - -.> couch_db
+ms_wallet - -.> couch_db
+
+android - -( gateway
+ios - -( gateway
+web - -( gateway
+teammember -right-( gateway
+
+authenticate - - ldap
+gateway - -( authenticate
+
+kafka - - kafka_produce
+kafka -up- kafka_consume
+ms_guests - -( kafka_produce
+ms_wallet - -( kafka_produce
+match_link -right-( kafka_consume
+data_lake -down-( kafka_consume
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 13:01:30 EDT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

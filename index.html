@@ -25,16 +25,41 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<h2>AWS SA Interview</h2>
+					<h2>Match & Link Processor</h2>
 					<br>
 					<br>
-					<p>
-						Match & Link Processor
-					</p>
 					<p>
 						<small>Prepared by <strong>Kareem Aljabr</strong></small>
 					</p>
 				</section>
+
+				<section data-background-image="dist/assets/background/black_chalk.jpg">
+					<h2>Introduction</h2>
+					<p>
+						At <a href="https://www.universalorlando.com/" target="_blank">Universal Orlando Resort</a> guests can have either a profile or an account.
+					</p>
+					<p style="text-align: left">Profile:</p>
+					<ul style="">
+						<li>Buy a ticket and <span style="color: yellow">checkout</span> as a guest</li>
+						<li>Book a hotel room and <span style="color: yellow">checkout</span> as a guest</li>
+						<li>Buy a ticket at the <span style="color: yellow">Theme Park</span> gate</li>
+						<li>Taking a <span style="color: yellow">survey</span> in the park</li>
+						<li><span style="color: yellow">Sign up</span> for emails</li>
+					</ul>
+				</section>
+
+				<section data-background-image="dist/assets/background/black_chalk.jpg">
+					<h2>Introduction Count.</h2>
+					<br>
+
+					<p style="text-align: left">Account:</p>
+					<ul style="">
+						<li>Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span></li>
+						<li><span style="color: yellow">Checkout</span> as a guest and at the end provide a password to create an account</li>
+						<li><span style="color: yellow">Ticket confirmation email</span> and click on the link to create an account</li>
+					</ul>
+				</section>
+
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<h3>What is Match & Link?</h3>
 					<br>
@@ -53,6 +78,7 @@
 						</li>
 					</ul>
 				</section>
+
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<section>
 						<h3>Core Concept - Scenario 1</h3>
@@ -163,6 +189,7 @@
 							</p>
 						</aside>
 					</section>
+
 					<section>
 						<h3>Issues Part #2</h3>
 						<br>
@@ -179,12 +206,86 @@
 							<li class="fragment">
 								Resulted in creating 100 millions of <span style="color: yellow">ghost profiles</span>.
 							</li>
+							<li class="fragment">
+								<span style="color: yellow;">IBM</span> support contract is too <span style="color: yellow">expensive</span>.
+							</li>
 						</ul>
 						<aside class="notes">
 							<p>
 								Match & Merge is part of the MDM AE service that used to happen real time when the profile is created or updated.
 							</p>
 						</aside>
+					</section>
+				</section>
+
+				<section data-background-image="dist/assets/background/black_chalk.jpg">
+					<section>
+						<h3>Existing Solution Revamp</h3>
+						<br>
+						<p>Component Diagram Stages</p>
+						<br>
+						<ul>
+							<li>
+								Existing Architecture
+							</li>
+							<li>
+								Suggested Architecture
+							</li>
+							<li>
+								Proxy existing service to new service
+							</li>
+							<li>
+								Introducing Kafka
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Existing Architecture</h4>
+						<div style="margin: auto;">
+							<img src="dist/assets/diagrams/mdm-ae.svg" alt="mdm ae old" style="height: 500px"/>
+						</div>
+						<aside class="notes">
+							<p>
+								As I mentioned earlier we had many issues with this design
+							</p>
+							<p>
+								The synchronous M&M. Adding new features to MDM AE was challenging. Production issues due to performance especially on event days.
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h4>Suggested Architecture</h4>
+						<div style="margin: auto;">
+							<img src="dist/assets/diagrams/mdm-ae-retire.svg" alt="mdm ae old" style="height: 500px"/>
+						</div>
+						<aside class="notes">
+							<p>
+								We faced many challenges trying to implement this design right away as our clients had no bandwidth to work on rewriting their services to point to our new service. With completely new endpoints and different requests and responses.
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h4>Proxy to New Service</h4>
+						<div style="margin: auto;">
+							<img src="dist/assets/diagrams/mdm-ae-proxy.svg" alt="mdm ae old" style="height: 500px"/>
+						</div>
+						<aside class="notes">
+							<p>
+								I suggested the following solution. Rewire old service to point to the new service. This way our clients don't need to make changes until they are ready.
+							</p>
+							<p>
+								During this process I found out many gaps in the new service design. Like missing functionalities or not required ones.
+							</p>
+							<p>
+								Wrote automation testing for the old service and made that part of the CI/CD pipeline to make sure whatever changes we make are not going to break current functionality.
+							</p>
+						</aside>
+					</section>
+					<section>
+						<h4>Component Diagram - Kafka</h4>
+						<div style="margin: auto;">
+							<img src="dist/assets/diagrams/mdm-ae-kafka.svg" alt="mdm ae old" style="height: 500px"/>
+						</div>
 					</section>
 				</section>
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
