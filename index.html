@@ -24,7 +24,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="dist/assets/background/aws-rocket.jpg">
+				<section data-background-image="dist/assets/background/aws-gray.jpg">
 					<h2>Match & Link Processor</h2>
 					<br>
 					<br>
@@ -34,11 +34,11 @@
 				</section>
 
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<h2>Introduction</h2>
+					<h3>Introduction</h3>
 					<p>
 						At <a href="https://www.universalorlando.com/" target="_blank">Universal Orlando Resort</a> guests can have either a profile or an account.
 					</p>
-					<p style="text-align: left">Profile:</p>
+					<p style="text-align: left">A <span style="color: yellow">profile</span> is created when you:</p>
 					<ul style="">
 						<li>Buy a ticket and <span style="color: yellow">checkout</span> as a guest</li>
 						<li>Book a hotel room and <span style="color: yellow">checkout</span> as a guest</li>
@@ -49,13 +49,13 @@
 				</section>
 
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<h2>Introduction Count.</h2>
+					<h3>Introduction Count.</h3>
 					<br>
-					<p style="text-align: left">Account:</p>
+					<p style="text-align: left">An <span style="color: yellow">account</span> when you:</p>
 					<ul style="">
 						<li>Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span></li>
 						<li><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
-						<li><span style="color: yellow">Ticket confirmation email</span> click the link to create an account</li>
+						<li>Click create account link in a <span style="color: yellow">Ticket confirmation email</span></li>
 					</ul>
 				</section>
 
@@ -73,7 +73,7 @@
 							When a profile is <span style="color: yellow">created or updated</span> it searches for a matching profile.
 						</li>
 						<li class="fragment">
-							If a <span style="color: yellow">matching</span> profile is found, both profiles will be <span style="color: yellow">linked</span> if one of the matching rules' <span style="color: yellow">threshold achieved</span>.
+							If a <span style="color: yellow">matching</span> profile is found, both profiles will be <span style="color: yellow">linked</span> if one of the matching <span style="color: yellow">rules</span> is achieved .
 						</li>
 					</ul>
 				</section>
@@ -157,11 +157,11 @@
 						</aside>
 					</section>
 					<section>
-						<h3>Issues Part #1</h3>
+						<h3>Issues</h3>
 						<br>
 						<ul>
 							<li class="fragment">
-								written by a team of developers from IBM, their contracts were <span style="color: red">terminated</span>.
+								written by a team of developers from IBM, whose contracts were <span style="color: red">terminated</span>.
 							</li>
 							<li class="fragment">
 								Lack of <span style="color: yellow">documentation</span>.
@@ -190,7 +190,7 @@
 					</section>
 
 					<section>
-						<h3>Issues Part #2</h3>
+						<h3>Issues Cont.</h3>
 						<br>
 						<ul>
 							<li class="fragment">
@@ -292,6 +292,12 @@
 						<h3>Sequence Diagram - Initial</h3>
 						<div style="margin: auto;">
 							<img src="dist/assets/sequence/match-link-initial.svg" alt="mdm ae old" style="height: 550px"/>
+						</div>
+					</section>
+					<section>
+						<h3>Sequence Diagram - Read DB</h3>
+						<div style="margin: auto;">
+							<img src="dist/assets/sequence/match-link-read-db.svg" alt="mdm ae old" style="height: 550px"/>
 						</div>
 					</section>
 				</section>
