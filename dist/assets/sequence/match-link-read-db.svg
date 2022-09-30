@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="877px" preserveAspectRatio="none" style="width:1246px;height:877px;background:#FFFFFF;" version="1.1" viewBox="0 0 1246 877" width="1246px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="26.4883" id="_title" style="stroke:none;stroke-width:1.0;" width="215" x="511.5" y="22.7773"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="205" x="516.5" y="41.3125">Match &amp; Link execution flow</text><rect fill="#FFE4C4" height="808.2246" style="stroke:#000000;stroke-width:0.5;" width="155" x="105" y="56.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="92" x="136.5" y="68.834">Microservices</text><rect fill="#FFC0CB" height="808.2246" style="stroke:#000000;stroke-width:0.5;" width="141" x="302" y="56.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="90" x="327.5" y="68.834">Kafka Cluster</text><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="72" x="331.5" y="84.1445">ZooKeeper</text><rect fill="#90EE90" height="808.2246" style="stroke:#000000;stroke-width:0.5;" width="145" x="485" y="56.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="57" x="529" y="68.834">Write DB</text><rect fill="#C9FFC9" height="808.2246" style="stroke:#000000;stroke-width:0.5;" width="145" x="672" y="56.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="56" x="716.5" y="68.834">Read DB</text><rect fill="#ADD8E6" height="808.2246" style="stroke:#000000;stroke-width:0.5;" width="169" x="859" y="56.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="72" x="907.5" y="68.834">Processors</text><rect fill="#D3D3D3" height="808.2246" style="stroke:#000000;stroke-width:0.5;" width="148" x="1070" y="56.2656"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="67" x="1110.5" y="68.834">Data Lake</text><rect fill="#FFFFFF" height="178.4844" style="stroke:#000000;stroke-width:1.0;" width="10" x="177.5" y="185.4844"/><rect fill="#FFFFFF" height="178.4844" style="stroke:#000000;stroke-width:1.0;" width="10" x="177.5" y="584.7637"/><rect fill="#FFFFFF" height="44.6211" style="stroke:#000000;stroke-width:1.0;" width="10" x="552.5" y="274.7266"/><rect fill="#FFFFFF" height="44.6211" style="stroke:#000000;stroke-width:1.0;" width="10" x="552.5" y="674.0059"/><rect fill="#FFFFFF" height="44.6211" style="stroke:#000000;stroke-width:1.0;" width="10" x="739.5" y="453.2109"/><rect fill="#FFFFFF" height="354.6582" style="stroke:#000000;stroke-width:1.0;" width="10" x="938.5" y="408.5898"/><line style="stroke:#000000;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="18" x2="18" y1="138.8633" y2="870.4902"/><line style="stroke:#000000;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="182" x2="182" y1="138.8633" y2="870.4902"/><line style="stroke:#000000;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="372" x2="372" y1="138.8633" y2="870.4902"/><line style="stroke:#000000;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="557" x2="557" y1="138.8633" y2="870.4902"/><line style="stroke:#000000;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="744" x2="744" y1="138.8633" y2="870.4902"/><line style="stroke:#000000;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="943" x2="943" y1="138.8633" y2="870.4902"/><line style="stroke:#000000;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1144" x2="1144" y1="138.8633" y2="870.4902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="14" x="8.5" y="135.9102">UI</text><ellipse cx="18.5" cy="70.875" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:0.5;"/><path d="M18.5,78.875 L18.5,105.875 M5.5,86.875 L31.5,86.875 M18.5,105.875 L5.5,120.875 M18.5,105.875 L31.5,120.875 " fill="none" style="stroke:#000000;stroke-width:0.5;"/><rect fill="#FFFFFF" height="46.9766" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="87" x="139" y="90.8867"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="62" x="151.5" y="111.4219">«Service»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="146" y="127.9102">ms-guests</text><rect fill="#FFFFFF" height="46.9766" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="73" x="336" y="90.8867"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="59" x="343" y="111.4219">«Broker»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="353.5" y="127.9102">Kafka</text><rect fill="#FFFFFF" height="46.9766" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="77" x="519" y="90.8867"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="59" x="528" y="111.4219">«NoSQL»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="526" y="127.9102">CouchDb</text><rect fill="#FFFFFF" height="46.9766" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="77" x="706" y="90.8867"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="59" x="715" y="111.4219">«NoSQL»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="713" y="127.9102">CouchDb</text><rect fill="#FFFFFF" height="46.9766" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="101" x="893" y="90.8867"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="81" x="903" y="111.4219">«Processor»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="900" y="127.9102">Match &amp; Link</text><rect fill="#FFFFFF" height="46.9766" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.5;" width="80" x="1104" y="90.8867"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="45" x="1121.5" y="111.4219">«Lake»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="1111" y="127.9102">Data Lake</text><rect fill="#FFFFFF" height="178.4844" style="stroke:#000000;stroke-width:1.0;" width="10" x="177.5" y="185.4844"/><rect fill="#FFFFFF" height="178.4844" style="stroke:#000000;stroke-width:1.0;" width="10" x="177.5" y="584.7637"/><rect fill="#FFFFFF" height="44.6211" style="stroke:#000000;stroke-width:1.0;" width="10" x="552.5" y="274.7266"/><rect fill="#FFFFFF" height="44.6211" style="stroke:#000000;stroke-width:1.0;" width="10" x="552.5" y="674.0059"/><rect fill="#FFFFFF" height="44.6211" style="stroke:#000000;stroke-width:1.0;" width="10" x="739.5" y="453.2109"/><rect fill="#FFFFFF" height="354.6582" style="stroke:#000000;stroke-width:1.0;" width="10" x="938.5" y="408.5898"/><polygon fill="#000000" points="165.5,181.4844,175.5,185.4844,165.5,189.4844" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="18.5" x2="171.5" y1="185.4844" y2="185.4844"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="140" x="25.5" y="165.4316">HTTP Create/Update</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="25.5" y="180.7422">Profile/Account</text><polygon fill="#000000" points="360.5,226.1055,370.5,230.1055,360.5,234.1055" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="187.5" x2="366.5" y1="230.1055" y2="230.1055"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="104" x="194.5" y="210.0527">Produces Event</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="194.5" y="225.3633">guest topic</text><polygon fill="#000000" points="540.5,270.7266,550.5,274.7266,540.5,278.7266" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="187.5" x2="546.5" y1="274.7266" y2="274.7266"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="71" x="194.5" y="254.6738">HTTP Save</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="194.5" y="269.9844">guest profile</text><polygon fill="#000000" points="198.5,315.3477,188.5,319.3477,198.5,323.3477" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="192.5" x2="556.5" y1="319.3477" y2="319.3477"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="105" x="204.5" y="299.2949">HTTP Response</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="204.5" y="314.6055">success</text><polygon fill="#000000" points="29.5,359.9688,19.5,363.9688,29.5,367.9688" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="23.5" x2="181.5" y1="363.9688" y2="363.9688"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="105" x="35.5" y="343.916">HTTP Response</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="35.5" y="359.2266">success</text><polygon fill="#000000" points="926.5,404.5898,936.5,408.5898,926.5,412.5898" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="372.5" x2="932.5" y1="408.5898" y2="408.5898"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="112" x="379.5" y="388.5371">Consumes Event</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="379.5" y="403.8477">guest topic</text><polygon fill="#000000" points="760.5,449.2109,750.5,453.2109,760.5,457.2109" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="754.5" x2="937.5" y1="453.2109" y2="453.2109"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="69" x="766.5" y="433.1582">HTTP Find</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="766.5" y="448.4688">find matching profile</text><polygon fill="#000000" points="926.5,493.832,936.5,497.832,926.5,501.832" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="744.5" x2="932.5" y1="497.832" y2="497.832"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="82" x="751.5" y="477.7793">HTTP Found</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="751.5" y="493.0898">found matching profile</text><line style="stroke:#000000;stroke-width:1.0;" x1="948.5" x2="990.5" y1="527.1426" y2="527.1426"/><line style="stroke:#000000;stroke-width:1.0;" x1="990.5" x2="990.5" y1="527.1426" y2="540.1426"/><line style="stroke:#000000;stroke-width:1.0;" x1="949.5" x2="990.5" y1="540.1426" y2="540.1426"/><polygon fill="#000000" points="959.5,536.1426,949.5,540.1426,959.5,544.1426" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="147" x="955.5" y="522.4004">Applies Matching Rules</text><polygon fill="#000000" points="198.5,580.7637,188.5,584.7637,198.5,588.7637" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="192.5" x2="937.5" y1="584.7637" y2="584.7637"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="89" x="204.5" y="564.7109">HTTP Update</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="204.5" y="580.0215">link profiles</text><polygon fill="#000000" points="360.5,625.3848,370.5,629.3848,360.5,633.3848" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="187.5" x2="366.5" y1="629.3848" y2="629.3848"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="104" x="194.5" y="609.332">Produces Event</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="194.5" y="624.6426">link topic</text><polygon fill="#000000" points="540.5,670.0059,550.5,674.0059,540.5,678.0059" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="187.5" x2="546.5" y1="674.0059" y2="674.0059"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="71" x="194.5" y="653.9531">HTTP Save</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="194.5" y="669.2637">guest profile</text><polygon fill="#000000" points="198.5,714.627,188.5,718.627,198.5,722.627" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="192.5" x2="556.5" y1="718.627" y2="718.627"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="105" x="204.5" y="698.5742">HTTP Response</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="204.5" y="713.8848">success</text><polygon fill="#000000" points="931.5,759.248,941.5,763.248,931.5,767.248" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="182.5" x2="937.5" y1="763.248" y2="763.248"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="105" x="189.5" y="743.1953">HTTP Response</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50" x="189.5" y="758.5059">success</text><polygon fill="#000000" points="1132,803.8691,1142,807.8691,1132,811.8691" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="372.5" x2="1138" y1="807.8691" y2="807.8691"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="112" x="379.5" y="787.8164">Consumes Event</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="379.5" y="803.127">guest topic</text><polygon fill="#000000" points="1132,848.4902,1142,852.4902,1132,856.4902" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="372.5" x2="1138" y1="852.4902" y2="852.4902"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="112" x="379.5" y="832.4375">Consumes Event</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="379.5" y="847.748">link topic</text><rect fill="#FFFFFF" height="11.7773" id="_title" style="stroke:none;stroke-width:1.0;" width="63" x="1175" y="5"/><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="63" x="1175" y="14.668">Match &amp; Link</text><!--MD5=[96b3622ea9b8428a4abe4256a285c60c]
+@startuml
+!include ../include.puml
+
+header Match & Link
+title Match & Link execution flow
+
+actor "UI" as ui
+
+box "Microservices" #Bisque
+    participant "ms-guests" as ms_guests <<Service>>
+end box
+
+box "Kafka Cluster\n ZooKeeper" #Pink
+    participant "Kafka" as broker <<Broker>>
+end box
+
+box "Write DB" #LightGreen
+    participant "CouchDb" as couch <<NoSQL>>
+end box
+
+box "Read DB" #Technology
+    participant "CouchDb" as read_couch <<NoSQL>>
+end box
+
+box "Processors" #LightBlue
+    participant "Match & Link" as match_link <<Processor>>
+end box
+
+box "Data Lake" #LightGray
+    participant "Data Lake" as data_lake <<Lake>>
+end box
+
+ui -> ms_guests : **HTTP Create/Update**\nProfile/Account
+activate ms_guests
+ms_guests -> broker : **Produces Event**\nguest topic
+ms_guests -> couch : **HTTP Save**\nguest profile
+activate couch
+couch - -> ms_guests : **HTTP Response**\nsuccess
+deactivate couch
+ms_guests - -> ui : **HTTP Response**\nsuccess
+deactivate ms_guests
+broker -> match_link :**Consumes Event**\nguest topic
+activate match_link
+match_link -> read_couch :**HTTP Find**\nfind matching profile
+activate read_couch
+read_couch - -> match_link : **HTTP Found**\nfound matching profile
+deactivate read_couch
+match_link -> match_link : Applies Matching Rules
+match_link -> ms_guests : **HTTP Update**\nlink profiles
+activate ms_guests
+ms_guests -> broker : **Produces Event**\nlink topic
+ms_guests -> couch : **HTTP Save**\nguest profile
+activate couch
+couch - -> ms_guests : **HTTP Response**\nsuccess
+deactivate couch
+ms_guests - -> match_link : **HTTP Response**\nsuccess
+deactivate ms_guests
+deactivate match_link
+broker -> data_lake :**Consumes Event**\nguest topic
+broker -> data_lake :**Consumes Event**\nlink topic
+
+@enduml
+
+@startuml
+
+
+
+skinparam style strictuml
+
+scale max 2048 width
+
+skinparam BoxPadding 20
+skinparam ParticipantPadding 30
+
+skinparam actor {
+  BorderColor Black
+  BackgroundColor<< Human >> LightGrey
+  BackgroundColor White
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam object {
+  BorderColor Black
+  BackgroundColor<<External>> LightGrey
+  BackgroundColor White
+
+  BackgroundColor<<Abstract>> LightBlue
+  BackgroundColor<<Enum>> LightRed
+}
+
+skinparam folder {
+  BorderColor Black
+  BackgroundColor<< Human >> LightGrey
+  BackgroundColor White
+
+  BorderColor<<App>> $App
+  BorderColor<<Park>> $Park
+  BorderColor<<UPR>> $UPR
+  BorderColor<<Vendor>> $Vendor
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam interface {
+  BackgroundColor<<Ingore>> White
+  BorderColor<<Ignore>> White
+  FontColor<<Ignore>> White
+  StereotypeFontColor<<Ignore>> White
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam ArrowColor<<Ignore>> White
+
+skinparam ArrowColor Black
+skinparam BackgroundColor White
+skinparam CloudBackgroundColor white
+skinparam DatabaseBackgroundColor White
+skinparam NodeBackgroundColor white
+
+skinparam class {
+  BackgroundColor LightGrey
+  BorderColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam Object {
+  BackgroundColor White
+  BorderColor Black
+
+  BackgroundColor<<OtherDomain>> LightGrey
+}
+
+skinparam note {
+  BackgroundColor #FFEFD7
+  BorderColor Black
+}
+
+skinparam boundary {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam participant {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam card {
+  BackgroundColor White
+  BorderColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam queue {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+
+  BorderColor<<App>> $App
+  BorderColor<<Park>> $Park
+  BorderColor<<UPR>> $UPR
+  BorderColor<<Vendor>> $Vendor
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam state {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam storage {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+
+  BorderColor<<App>> $App
+  BorderColor<<Park>> $Park
+  BorderColor<<UPR>> $UPR
+  BorderColor<<Vendor>> $Vendor
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam collections {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam entity {
+  BackgroundColor White
+  BorderColor Black
+  FontColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam SequenceBoxBorderColor Black
+
+skinparam EntityBackgroundColor White
+skinparam EntityBorderColor Black
+
+skinparam activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  DiamondBackgroundColor white
+  DiamondBorderColor black
+  EndColor black
+  StartColor black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam sequence {
+    MessageAlignment left
+
+    LifeLineBorderColor Black
+    LifeLineBackgroundColor White
+}
+
+skinparam usecase {
+	BackgroundColor White
+	BorderColor Black
+
+	BackgroundColor<< Main >> YellowGreen
+	BorderColor<< Main >> YellowGreen
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+  BackgroundColor<<Out of Scope>> $OutOfScope
+}
+
+skinparam interface {
+  BackgroundColor White
+  BorderColor Black
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+}
+
+skinparam component {
+  BackgroundColor White
+  BorderColor Black
+
+  BorderColor<<App>> $App
+  BorderColor<<Park>> $Park
+  BorderColor<<UPR>> $UPR
+  BorderColor<<Vendor>> $Vendor
+
+  FontColor<<App>> $App
+  FontColor<<Park>> $Park
+  FontColor<<UPR>> $UPR
+  FontColor<<Vendor>> $Vendor
+
+  BackgroundColor<<Existing>> $Existing
+  BackgroundColor<<Modify>> $Modify
+  BackgroundColor<<New>> $New
+  BackgroundColor<<Deprecated>> $Deprecated
+  BackgroundColor<<Out of Scope>> $OutOfScope
+}
+
+skinparam rectangle {
+  BackgroundColor White
+	roundCorner 25
+}
+
+
+header Match & Link
+title Match & Link execution flow
+
+actor "UI" as ui
+
+box "Microservices" #Bisque
+    participant "ms-guests" as ms_guests <<Service>>
+end box
+
+box "Kafka Cluster\n ZooKeeper" #Pink
+    participant "Kafka" as broker <<Broker>>
+end box
+
+box "Write DB" #LightGreen
+    participant "CouchDb" as couch <<NoSQL>>
+end box
+
+box "Read DB" #Technology
+    participant "CouchDb" as read_couch <<NoSQL>>
+end box
+
+box "Processors" #LightBlue
+    participant "Match & Link" as match_link <<Processor>>
+end box
+
+box "Data Lake" #LightGray
+    participant "Data Lake" as data_lake <<Lake>>
+end box
+
+ui -> ms_guests : **HTTP Create/Update**\nProfile/Account
+activate ms_guests
+ms_guests -> broker : **Produces Event**\nguest topic
+ms_guests -> couch : **HTTP Save**\nguest profile
+activate couch
+couch - -> ms_guests : **HTTP Response**\nsuccess
+deactivate couch
+ms_guests - -> ui : **HTTP Response**\nsuccess
+deactivate ms_guests
+broker -> match_link :**Consumes Event**\nguest topic
+activate match_link
+match_link -> read_couch :**HTTP Find**\nfind matching profile
+activate read_couch
+read_couch - -> match_link : **HTTP Found**\nfound matching profile
+deactivate read_couch
+match_link -> match_link : Applies Matching Rules
+match_link -> ms_guests : **HTTP Update**\nlink profiles
+activate ms_guests
+ms_guests -> broker : **Produces Event**\nlink topic
+ms_guests -> couch : **HTTP Save**\nguest profile
+activate couch
+couch - -> ms_guests : **HTTP Response**\nsuccess
+deactivate couch
+ms_guests - -> match_link : **HTTP Response**\nsuccess
+deactivate ms_guests
+deactivate match_link
+broker -> data_lake :**Consumes Event**\nguest topic
+broker -> data_lake :**Consumes Event**\nlink topic
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 13:01:30 EDT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
