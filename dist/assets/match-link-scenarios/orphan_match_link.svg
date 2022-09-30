@@ -22,6 +22,20 @@
                             </g>
                         </g>
                     </g>
+                </g>
+                <g id="step_2">
+                    <g style="opacity: 1;" transform="translate(60.5859375,148)" id="flowchart-o2-10149" class="node default">
+                        <rect class="label-container" height="44" width="105.171875" y="-22" x="-52.5859375" ry="5" rx="5"></rect>
+                        <g transform="translate(0,0)" class="label">
+                            <g transform="translate(-42.5859375,-12)">
+                                <foreignObject height="24" width="85.171875">
+                                    <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><i class="fa fa-solid"></i> <i class="fa fa-user"></i> profile B</div>
+                                </foreignObject>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="step_3">
                     <g style="opacity: 1;" id="L-o1-o2" class="edgePath LS-o1 LE-o2">
                         <path style="fill:none;stroke-width:2px;stroke-dasharray:3;" marker-end="url(#arrowhead6789)" d="M60.5859375,52L60.5859375,58.166666666666664C60.5859375,64.33333333333333,60.5859375,76.66666666666667,60.5859375,89C60.5859375,101.33333333333333,60.5859375,113.66666666666667,60.5859375,119.83333333333333L60.5859375,126" class="path"></path>
                         <defs>
@@ -39,19 +53,7 @@
                         </g>
                     </g>
                 </g>
-                <g id="step_2">
-                    <g style="opacity: 1;" transform="translate(60.5859375,148)" id="flowchart-o2-10149" class="node default">
-                        <rect class="label-container" height="44" width="105.171875" y="-22" x="-52.5859375" ry="5" rx="5"></rect>
-                        <g transform="translate(0,0)" class="label">
-                            <g transform="translate(-42.5859375,-12)">
-                                <foreignObject height="24" width="85.171875">
-                                    <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><i class="fa fa-solid"></i> <i class="fa fa-user"></i> profile B</div>
-                                </foreignObject>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-                <g id="step_3">
+                <g id="step_4">
                     <g style="opacity: 1;" transform="translate(213.53125,30)" id="flowchart-o3-10150" class="node default">
                         <rect class="label-container" height="44" width="100.34375" y="-22" x="-50.171875" ry="5" rx="5"></rect>
                         <g transform="translate(0,0)" class="label">
@@ -62,6 +64,20 @@
                             </g>
                         </g>
                     </g>
+                </g>
+                <g id="step_5">
+                    <g style="opacity: 1;" transform="translate(213.53125,148)" id="flowchart-o4-10151" class="node default">
+                        <rect class="label-container" height="44" width="100.71875" y="-22" x="-50.359375" ry="0" rx="0"></rect>
+                        <g transform="translate(0,0)" class="label">
+                            <g transform="translate(-40.359375,-12)">
+                                <foreignObject height="24" width="80.71875">
+                                    <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><i class="fa fa-user"></i> profile A</div>
+                                </foreignObject>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="step_6">
                     <g style="opacity: 1;" id="L-o3-o4" class="edgePath LS-o3 LE-o4">
                         <path style="stroke:white;fill:none;" marker-end="url(#arrowhead6790)" d="M213.53125,52L213.53125,58.166666666666664C213.53125,64.33333333333333,213.53125,76.66666666666667,213.53125,89C213.53125,101.33333333333333,213.53125,113.66666666666667,213.53125,119.83333333333333L213.53125,126" class="path"></path>
                         <defs>
@@ -76,18 +92,6 @@
                             <foreignObject height="24" width="32.578125">
                                 <div style="color: blue; display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span style="color:blue;" class="edgeLabel L-LS-o3' L-LE-o4" id="L-L-o3-o4">links</span></div>
                             </foreignObject>
-                        </g>
-                    </g>
-                </g>
-                <g id="step_4">
-                    <g style="opacity: 1;" transform="translate(213.53125,148)" id="flowchart-o4-10151" class="node default">
-                        <rect class="label-container" height="44" width="100.71875" y="-22" x="-50.359375" ry="0" rx="0"></rect>
-                        <g transform="translate(0,0)" class="label">
-                            <g transform="translate(-40.359375,-12)">
-                                <foreignObject height="24" width="80.71875">
-                                    <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><i class="fa fa-user"></i> profile A</div>
-                                </foreignObject>
-                            </g>
                         </g>
                     </g>
                 </g>

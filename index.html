@@ -53,7 +53,7 @@
 					<br>
 					<p style="text-align: left">An <span style="color: yellow">account</span> when you:</p>
 					<ul style="">
-						<li>Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span></li>
+						<li>Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span> app</li>
 						<li><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
 						<li>Click create account link in a <span style="color: yellow">Ticket confirmation email</span></li>
 					</ul>
@@ -85,6 +85,8 @@
 						<span class="fragment"></span>
 						<span class="fragment"></span>
 						<span class="fragment"></span>
+						<span class="fragment"></span>
+						<span class="fragment"></span>
 
 						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link.svg" style="height: 70%;width: 70%;margin: auto;">
 							<!--
@@ -92,7 +94,9 @@
                             { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
                             { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
                             { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
-                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] }
+                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
+                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },
+                            { "element": "#step_6", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "5"} ] }
                             ]}
                             -->
 						</div>
@@ -306,7 +310,7 @@
 						<h3>Guests Dashboard</h3>
 						<br>
 						<p>
-							I created a <span style="color: yellow">UI Dashboard</span> to allow both <span style="color: yellow">QA</span> and <span style="color: yellow">Business</span> teams to test the Match & Link process.
+							I created a <span style="color: yellow">UI Dashboard</span> to help both <span style="color: yellow">QA</span> and <span style="color: yellow">Business</span> teams test and validate the Match & Link process.
 						</p>
 						<aside class="notes">
 							<p>
@@ -404,6 +408,18 @@
 					</section>
 				</section>
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
+					<section>
+						<h3>Deployment</h3>
+						<p><small>Existing <span style="color: yellow">CI/CD</span> pipeline was built using <span style="color: yellow">IBM Urbancode tools</span></small></p>
+						<ul>
+							<li>
+								It didn't <span style="color: yellow">auto-scale</span>. There is manual work involved to create a new instance.
+							</li>
+							<li>
+								All <span style="color: yellow">CI/CD configurations</span> were managed by <span style="color: yellow">Devops</span> team. Nothing was accessible to developers.
+							</li>
+						</ul>
+					</section>
 					<section>
 						<h3>Existing Deployment Diagram</h3>
 						<div style="margin: auto;">

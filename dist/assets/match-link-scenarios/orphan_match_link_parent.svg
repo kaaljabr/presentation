@@ -27,38 +27,8 @@
             </g>
 
             <g class="nodes">
+                <!--Parent linked to a Child-->
                 <g id="step_1">
-                    <g style="opacity: 1;" transform="translate(96.6796875,55)" id="orphan_match_parent_node" class="node default">
-                        <rect class="label-container" height="44" width="69.609375" y="-22" x="-34.8046875" ry="0" rx="0"></rect>
-                        <g transform="translate(0,0)" class="label">
-                            <g transform="translate(-24.8046875,-12)">
-                                <foreignObject height="24" width="49.609375">
-                                    <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">orphan</div>
-                                </foreignObject>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-                <g id="step_2">
-                    <g style="opacity: 1;" id="L-o1-p1" class="edgePath LS-o1 LE-p1">
-                        <path style="fill:none;stroke-width:2px;stroke-dasharray:3;" marker-end="url(#arrowhead8620)" d="M96.6796875,77L96.6796875,83.16666666666667C96.6796875,89.33333333333333,96.6796875,101.66666666666667,96.6796875,114C96.6796875,126.33333333333333,96.6796875,138.66666666666666,96.6796875,149C96.6796875,159.33333333333334,96.6796875,167.66666666666666,96.6796875,171.83333333333334L96.6796875,176" class="path"></path>
-                        <defs>
-                            <marker orient="auto" markerHeight="6" markerWidth="8" markerUnits="strokeWidth" refY="5" refX="9" viewBox="0 0 10 10" id="arrowhead8620">
-                                <path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowheadPath" d="M 0 0 L 10 5 L 0 10 z"></path>
-                            </marker>
-                        </defs>
-                    </g>
-                    <g style="opacity: 1;" transform="translate(96.6796875,114)" class="edgeLabel">
-                        <g class="label" transform="translate(-29.953125,-12)">
-                            <rect height="24" width="59.90625" ry="0" rx="0"></rect>
-                            <foreignObject height="24" width="59.90625">
-                                <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span style="" class="edgeLabel L-LS-o1' L-LE-p1" id="L-L-o1-p1">matches</span></div>
-                            </foreignObject>
-                        </g>
-                    </g>
-                </g>
-
-                <g id="step_3">
                     <g style="opacity: 1;" id="L-p1-c1" class="edgePath LS-p1 LE-c1">
                         <path style="fill:none" marker-end="url(#arrowhead8619)" d="M96.6796875,220L96.6796875,224.16666666666666C96.6796875,228.33333333333334,96.6796875,236.66666666666666,96.6796875,245C96.6796875,253.33333333333334,96.6796875,261.6666666666667,96.6796875,270C96.6796875,278.3333333333333,96.6796875,286.6666666666667,96.6796875,290.8333333333333L96.6796875,295" class="path"></path>
                         <defs>
@@ -88,6 +58,39 @@
                         </g>
                     </g>
                 </g>
+                <!--  Orphan comes in -->
+                <g id="step_2">
+                    <g style="opacity: 1;" transform="translate(96.6796875,55)" id="orphan_match_parent_node" class="node default">
+                        <rect class="label-container" height="44" width="69.609375" y="-22" x="-34.8046875" ry="0" rx="0"></rect>
+                        <g transform="translate(0,0)" class="label">
+                            <g transform="translate(-24.8046875,-12)">
+                                <foreignObject height="24" width="49.609375">
+                                    <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml">orphan</div>
+                                </foreignObject>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <!--  Orphan matches the parent -->
+                <g id="step_3">
+                    <g style="opacity: 1;" id="L-o1-p1" class="edgePath LS-o1 LE-p1">
+                        <path style="fill:none;stroke-width:2px;stroke-dasharray:3;" marker-end="url(#arrowhead8620)" d="M96.6796875,77L96.6796875,83.16666666666667C96.6796875,89.33333333333333,96.6796875,101.66666666666667,96.6796875,114C96.6796875,126.33333333333333,96.6796875,138.66666666666666,96.6796875,149C96.6796875,159.33333333333334,96.6796875,167.66666666666666,96.6796875,171.83333333333334L96.6796875,176" class="path"></path>
+                        <defs>
+                            <marker orient="auto" markerHeight="6" markerWidth="8" markerUnits="strokeWidth" refY="5" refX="9" viewBox="0 0 10 10" id="arrowhead8620">
+                                <path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowheadPath" d="M 0 0 L 10 5 L 0 10 z"></path>
+                            </marker>
+                        </defs>
+                    </g>
+                    <g style="opacity: 1;" transform="translate(96.6796875,114)" class="edgeLabel">
+                        <g class="label" transform="translate(-29.953125,-12)">
+                            <rect height="24" width="59.90625" ry="0" rx="0"></rect>
+                            <foreignObject height="24" width="59.90625">
+                                <div style="display: inline-block; white-space: nowrap;" xmlns="http://www.w3.org/1999/xhtml"><span style="" class="edgeLabel L-LS-o1' L-LE-p1" id="L-L-o1-p1">matches</span></div>
+                            </foreignObject>
+                        </g>
+                    </g>
+                </g>
+                <!--  Parent linked to a child -->
                 <g id="step_4">
                     <g style="opacity: 1;" transform="translate(270.9140625,198)" id="child_link_parent_node_2" class="node default">
                         <rect class="label-container" height="44" width="54.859375" y="-22" x="-27.4296875" ry="5" rx="5"></rect>
@@ -118,6 +121,7 @@
                         </g>
                     </g>
                 </g>
+                <!--  Orphan linked to parent -->
                 <g id="step_5">
                     <g style="opacity: 1;" transform="translate(383.1484375,198)" id="orphan_link_parent_node" class="node default">
                         <rect class="label-container" height="44" width="69.609375" y="-22" x="-34.8046875" ry="0" rx="0"></rect>
