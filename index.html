@@ -51,7 +51,7 @@
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<h3>Introduction Count.</h3>
 					<br>
-					<p style="text-align: left">An <span style="color: yellow">account</span> when you:</p>
+					<p style="text-align: left">An <span style="color: yellow">account</span> is created when you:</p>
 					<ul style="">
 						<li>Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span> app</li>
 						<li><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
@@ -299,6 +299,19 @@
 						</div>
 					</section>
 					<section>
+						<h3>Guests Service Performance Issues</h3>
+						<p><small>I noticed <span style="color: yellow">high CPU</span> and <span style="color: yellow">Memory Usage</span> in <span style="color: yellow">Guests Service</span> when <span style="color: yellow">Match & Link</span> processor was launched</small></p>
+						</br>
+						<ul>
+							<li>
+								Due to <span style="color: yellow">high number</span> of search matching profiles calls.
+							</li>
+							<li>
+								I suggested using a <span style="color: yellow">read only DB replica</span> for Match & Link <span style="color: yellow">search queries</span>.
+							</li>
+						</ul>
+					</section>
+					<section>
 						<h3>Sequence Diagram - Read DB</h3>
 						<div style="margin: auto;">
 							<img src="dist/assets/sequence/match-link-read-db.svg" alt="mdm ae old" style="height: 550px"/>
@@ -310,7 +323,7 @@
 						<h4>Guests Dashboard</h4>
 						<br>
 						<p>
-							I created a <span style="color: yellow">UI Dashboard</span> to help both <span style="color: yellow">QA</span> and <span style="color: yellow">Business</span> teams test and validate the Match & Link process.
+							I created a <span style="color: yellow">UI Dashboard</span> to help both <span style="color: yellow">QA</span> and <span style="color: yellow">Business</span> teams test and validate the <span style="color: yellow">Match & Link</span> process.
 						</p>
 						<aside class="notes">
 							<p>
@@ -335,7 +348,7 @@
 						</aside>
 					</section>
 					<section>
-						<h4>Create Guest Profile - Alt. Names</h4>
+						<h4>Select an Alternative Name</h4>
 						<p><small>Select available <span style="color: yellow">Alternative name</span> for the given first name to test <span style="color: yellow">fuzzy</span> matching</small></p>
 						<p>
 							<img src="dist/assets/guests-dashboard/alt_names_feature.png" alt="create guest profile" style="max-width: 100%;height: auto;">
@@ -345,7 +358,7 @@
 						</aside>
 					</section>
 					<section>
-						<h4>Create Guest Profile Cont.</h4>
+						<h4>Primary Address</h4>
 						<small><span style="color: yellow">Primary address</span> details to validate address matching rules</small>
 						<img src="dist/assets/guests-dashboard/create_guest_profile_cont.png" alt="create guest profile" style="max-width: 100%;height: auto;">
 						<aside class="notes">
@@ -353,7 +366,7 @@
 						</aside>
 					</section>
 					<section>
-						<h4>Validate Match & Link</h4>
+						<h4>Orphan Profile</h4>
 						<small><span style="color: yellow">Orphan profile</span>, is a profile with no links to other profiles</small>
 						<img src="dist/assets/guests-dashboard/find_orphan_profile.png" alt="find orphan profile">
 						<aside class="notes">
@@ -361,7 +374,8 @@
 						</aside>
 					</section>
 					<section>
-						<h4>Validate Match & Link Cont.</h4>
+						<h4>Validate Match & Link</h4>
+						<small>Two profiles are <span style="color: yellow">linked</span>, forming a <span style="color: yellow">parent child relationship</span></small>
 						<img src="dist/assets/guests-dashboard/find_parent_one_linked.png" alt="find one linked profile">
 						<aside class="notes">
 							It might take a few seconds to see the matching result since it's an asynchronous process.
@@ -369,6 +383,7 @@
 					</section>
 					<section>
 						<h4>Validate Match & Link Cont.</h4>
+						<small><span style="color: yellow">Multiple</span> child profiles <span style="color: yellow">linked</span> to the same <span style="color: yellow">parent</span> profile.</small>
 						<img src="dist/assets/guests-dashboard/find_parent_profile_two_linked.png" alt="find two linked profiles">
 						<aside class="notes">
 							If you go ahead and create a 3rd profile matching the parent you'd see that in the search result here.
@@ -376,6 +391,7 @@
 					</section>
 					<section>
 						<h4>Validate Match & Link Cont.</h4>
+						<small><span style="color: yellow">Expand</span> any profile for more details</small>
 						<img src="dist/assets/guests-dashboard/expand_parent_profile.png" alt="expand parent profile">
 						<aside class="notes">
 							<p>
@@ -392,6 +408,7 @@
 					</section>
 					<section>
 						<h4>Validate Match & Link Cont.</h4>
+						<small><span style="color: yellow">Child</span> profiles have more details about the <span style="color: yellow">matching result</span>.</small>
 						<img src="dist/assets/guests-dashboard/expand_first_child.png" alt="expand child 1 profile">
 						<aside class="notes">
 							Here this profile matched the parent profile thru EMAIL_COMBO_1 matching rule.
@@ -433,6 +450,26 @@
 						</div>
 					</section>
 				</section>
+
+				<section data-background-image="dist/assets/background/black_chalk.jpg">
+					<section>
+						<h3>Future Enhancements</h3>
+						<ul>
+							<li>
+								Use <span style="color: yellow">Debezium</span> to avoid sending <span style="color: yellow">Kafka events</span> from all services before any commit to the DB.
+							</li>
+							<li>
+								Use <span style="color: yellow">In-Memory Cache</span> to mitigate the <span style="color: yellow">load on DB</span>.
+							</li>
+						</ul>
+
+					</section>
+					<section>
+						<div style="margin: auto;">
+							<img src="dist/assets/sequence/match-link-enhancement.svg" alt="mdm ae old" style="height: 550px"/>
+						</div>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -443,6 +480,7 @@
 		<script src="plugin/animate/plugin.js"></script>
 		<script src="plugin/animate/svg.min.js"></script>
 		<script src="plugin/zoom/zoom.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
