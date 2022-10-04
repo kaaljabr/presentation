@@ -39,12 +39,12 @@
 						At <a href="https://www.universalorlando.com/" target="_blank">Universal Orlando Resort</a> guests can have either a profile or an account.
 					</p>
 					<p style="text-align: left">A <span style="color: yellow">profile</span> is created when you:</p>
-					<ul style="">
-						<li>Buy a ticket and <span style="color: yellow">checkout</span> as a guest</li>
-						<li>Book a hotel room and <span style="color: yellow">checkout</span> as a guest</li>
-						<li>Buy a ticket at the <span style="color: yellow">Theme Park</span> gate</li>
-						<li>Taking a <span style="color: yellow">survey</span> in the park</li>
-						<li><span style="color: yellow">Sign up</span> for emails</li>
+					<ul>
+						<li class="fragment">Buy a ticket and <span style="color: yellow">checkout</span> as a guest</li>
+						<li class="fragment">Book a hotel room and <span style="color: yellow">checkout</span> as a guest</li>
+						<li class="fragment">Buy a ticket at the <span style="color: yellow">Theme Park</span> gate</li>
+						<li class="fragment">Taking a <span style="color: yellow">survey</span> in the park</li>
+						<li class="fragment"><span style="color: yellow">Sign up</span> for emails</li>
 					</ul>
 				</section>
 
@@ -53,9 +53,9 @@
 					<br>
 					<p style="text-align: left">An <span style="color: yellow">account</span> is created when you:</p>
 					<ul style="">
-						<li>Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span> app</li>
-						<li><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
-						<li>Click create account link in a <span style="color: yellow">Ticket confirmation email</span></li>
+						<li class="fragment">Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span> app</li>
+						<li class="fragment"><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
+						<li class="fragment">Click create account link in a <span style="color: yellow">Ticket confirmation email</span></li>
 					</ul>
 				</section>
 
@@ -64,7 +64,7 @@
 					<br>
 					<ul>
 						<li class="fragment">
-							<span style="color: yellow">Asynchronous</span> process
+							<span style="color: yellow">Asynchronous</span> process (worker)
 						</li>
 						<li class="fragment">
 							<span style="color: yellow">Consumes Kafka</span> events <span class="fragment"><span style="color: yellow">produced</span> by guest profile service.</span>
@@ -245,7 +245,7 @@
 					<section>
 						<h4>Existing Architecture</h4>
 						<div style="margin: auto;">
-							<img src="dist/assets/diagrams/mdm-ae.svg" alt="mdm ae old" style="height: 500px"/>
+							<img src="dist/assets/diagrams/component/mdm-ae.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
 						<aside class="notes">
 							<p>
@@ -259,43 +259,68 @@
 					<section>
 						<h4>Suggested Architecture</h4>
 						<div style="margin: auto;">
-							<img src="dist/assets/diagrams/mdm-ae-retire.svg" alt="mdm ae old" style="height: 500px"/>
+							<img src="dist/assets/diagrams/component/mdm-ae-retire.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
 						<aside class="notes">
 							<p>
-								We faced many challenges trying to implement this design right away as our clients had no bandwidth to work on rewriting their services to point to our new service. With completely new endpoints and different requests and responses.
+								<small>We faced many challenges trying to implement this design right away as our <span style="color: yellow">clients</span>
+									had no bandwidth to work on <span style="color: yellow">rewriting</span> their <span style="color: yellow">apps</span>
+									to point to our new service. With completely new endpoints and different requests and responses.</small>
+							</p>
+							<p>
+								<small>As you can see <span style="color: yellow">Match & Link is a service (API)</span> that is <span style="color: yellow">synchronously</span> called by guests service</small>
 							</p>
 						</aside>
 					</section>
 					<section>
 						<h4>Proxy to New Service</h4>
 						<div style="margin: auto;">
-							<img src="dist/assets/diagrams/mdm-ae-proxy.svg" alt="mdm ae old" style="height: 500px"/>
+							<img src="dist/assets/diagrams/component/mdm-ae-proxy.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
 						<aside class="notes">
 							<p>
-								I suggested the following solution. Rewire old service to point to the new service. This way our clients don't need to make changes until they are ready.
+								<small><span style="color: yellow">rewire the old service</span>
+									to point to the <span style="color: yellow">new service</span>. So our <span style="color: yellow">clients don't</span>
+									need to make changes to their codebase immediately.</small>
 							</p>
 							<p>
-								During this process I found out many gaps in the new service design. Like missing functionalities or not required ones.
+								<small>Found out <span style="color: yellow">gaps</span>
+									in the new service <span style="color: yellow">design & implementation</span>.
+									Like <span style="color: yellow">missing functionalities</span> or not required ones.</small>
 							</p>
 							<p>
-								Wrote automation testing for the old service and made that part of the CI/CD pipeline to make sure whatever changes we make are not going to break current functionality.
+								<small>Wrote <span style="color: yellow">automation tests</span> for the old service.
+								Integrated them with the<span style="color: yellow"> CI/CD pipeline</span> to make sure we are not breaking current functionality.
+									Or in other words to ensure <span style="color: yellow">backward compatibility</span>.</small>
 							</p>
 						</aside>
 					</section>
 					<section>
 						<h4>Component Diagram - Kafka</h4>
 						<div style="margin: auto;">
-							<img src="dist/assets/diagrams/mdm-ae-kafka.svg" alt="mdm ae old" style="height: 500px"/>
+							<img src="dist/assets/diagrams/component/mdm-ae-kafka.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
+						<aside class="notes">
+							<p>
+								<small><span style="color: yellow">Asynchronous process</span>
+									using <span style="color: yellow">Kafka</span>.</small>
+							</p>
+							<p>
+								<small><span style="color: yellow">Guests Service</span>
+									is independent of <span style="color: yellow">match & Link process</span>.</small>
+							</p>
+							<p>
+								<small><span style="color: yellow">Data Lake</span>
+									consumes link events.</small>
+							</p>
+						</aside>
 					</section>
 				</section>
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<section>
 						<h3>Sequence Diagram - Initial</h3>
 						<div style="margin: auto;">
-							<img src="dist/assets/sequence/match-link-initial.svg" alt="mdm ae old" style="height: 550px"/>
+							<img class="r-stretch" src="dist/assets/diagrams/sequence/match-link-initial.svg" alt="mdm ae old" style="height: 550px"/>
 						</div>
 					</section>
 					<section>
@@ -303,18 +328,18 @@
 						<p><small>I noticed <span style="color: yellow">high CPU</span> and <span style="color: yellow">Memory Usage</span> in <span style="color: yellow">Guests Service</span> when <span style="color: yellow">Match & Link</span> processor was launched</small></p>
 						</br>
 						<ul>
-							<li>
+							<li class="fragment">
 								Due to <span style="color: yellow">high number</span> of search matching profiles calls.
 							</li>
-							<li>
-								I suggested using a <span style="color: yellow">read only DB replica</span> for Match & Link <span style="color: yellow">search queries</span>.
+							<li class="fragment">
+								I <span style="color: yellow">redesigned</span> the <span style="color: yellow">solution</span> to add a <span style="color: yellow">read only</span> DB replica.
 							</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Sequence Diagram - Read DB</h3>
 						<div style="margin: auto;">
-							<img src="dist/assets/sequence/match-link-read-db.svg" alt="mdm ae old" style="height: 550px"/>
+							<img src="dist/assets/diagrams/sequence/match-link-read-db.svg" alt="mdm ae old" style="height: 550px"/>
 						</div>
 					</section>
 				</section>
@@ -435,10 +460,10 @@
 						<h3>Deployment</h3>
 						<p><small>Existing <span style="color: yellow">CI/CD</span> pipeline was built using <span style="color: yellow">IBM Urbancode tools</span></small></p>
 						<ul>
-							<li>
-								It didn't <span style="color: yellow">auto-scale</span>. There is manual work involved to create a new instance.
+							<li class="fragment">
+								<span style="color: yellow">Auto-scaling</span> was not an option. There is <span style="color: yellow">manual</span> work involved to create a <span style="color: yellow">new instance</span>.
 							</li>
-							<li>
+							<li class="fragment">
 								All <span style="color: yellow">CI/CD configurations</span> were managed by <span style="color: yellow">Devops</span> team. Nothing was accessible to developers.
 							</li>
 						</ul>
@@ -446,7 +471,7 @@
 					<section>
 						<h3>Existing Deployment Diagram</h3>
 						<div style="margin: auto;">
-							<img src="dist/assets/deployment/existing-deployment.svg" alt="existing deployment" style="height: 500px"/>
+							<img src="dist/assets/diagrams/deployment/existing-deployment.svg" alt="existing deployment" style="height: 500px"/>
 						</div>
 					</section>
 				</section>
@@ -454,21 +479,49 @@
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<section>
 						<h3>Future Enhancements</h3>
+						<h4>Debezium</h4>
 						<ul>
-							<li>
-								Use <span style="color: yellow">Debezium</span> to avoid sending <span style="color: yellow">Kafka events</span> from all services before any commit to the DB.
+							<li class="fragment">
+								<span style="color: yellow">Debezium</span> continuously monitors your <span style="color: yellow">databases</span> and lets any of your applications <span style="color: yellow">stream every row-level</span> change in the same order they were <span style="color: yellow">committed to the database</span>.
 							</li>
-							<li>
-								Use <span style="color: yellow">In-Memory Cache</span> to mitigate the <span style="color: yellow">load on DB</span>.
+							<li class="fragment">
+								<span style="color: yellow">Debezium</span> is built on top of <span style="color: yellow">Apache Kafka</span>, which is proven, <span style="color: yellow">scalable</span>, and handles very <span style="color: yellow">large volumes of data</span> very quickly.
 							</li>
 						</ul>
-
+						<aside class="notes">
+							<p><small>Why do we need a services that <span style="color: yellow">update the database</span> to <span style="color: yellow">send notifications</span> and <span style="color: yellow">publish messages</span></small></p>
+							<p><small>Doing that correctly - especially when things go wrong - is really tough, and if you get it wrong the data in those system may become inconsistent.</small></p>
+						</aside>
+					</section>
+					<section data-auto-animate>
+						<h3>Future Enhancements</h3>
+						<h3>In-Memory Cache</h3>
+						<ul>
+							<li class="fragment">
+								Use <span style="color: yellow">In-Memory Cache</span> to mitigate the <span style="color: yellow">load on DB</span>.
+							</li>
+							<li class="fragment">
+								<span style="color: yellow">Amazon ElastiCache</span> supports the <span style="color: yellow">Memcached</span> and <span style="color: yellow">Redis</span> cache engines. For <span style="color: yellow">simple</span> data models we can go for memcached. Redis handles <span style="color: yellow">complex</span> data types and many other features.
+							</li>
+						</ul>
+						<aside class="notes">
+							<p><small></small></p>
+							<p><small></small></p>
+							<p><small></small></p>
+						</aside>
 					</section>
 					<section>
 						<div style="margin: auto;">
-							<img src="dist/assets/sequence/match-link-enhancement.svg" alt="mdm ae old" style="height: 550px"/>
+							<img src="dist/assets/diagrams/sequence/match-link-enhancement.svg" alt="mdm ae old" style="height: 600px"/>
 						</div>
 					</section>
+				</section>
+				<section data-auto-animate data-background-image="dist/assets/background/questions.jpg">
+					<h1>Questions?</h1>
+				</section>
+				<section data-auto-animate data-background-image="dist/assets/background/questions.jpg">
+					<h1>Questions?</h1>
+					<h2>Time</h2>
 				</section>
 			</div>
 		</div>
@@ -487,13 +540,15 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				pdfSeparateFragments: false,
 				// Add your config here:
 				// transition: 'convex',
 				transitionSpeed: 'slow',        // slow down slide transitions
 				controlsTutorial: false,        // turn off arrow bumping
 				// controlsLayout: 'edges',        // default 'bottom-right'
 				 //controlsBackArrows: 'visible',  // make previous slide arrow bright instead of faded
-				progress: false,                // turn off progress bar display
+				progress: true,
+				center: true,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealAnimate, RevealZoom ]
 			});
