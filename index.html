@@ -32,6 +32,41 @@
 						<small>Prepared by <strong>Kareem Aljabr</strong></small>
 					</p>
 				</section>
+				<section data-background-image="dist/assets/background/black_chalk.jpg">
+					<h2>Content</h2>
+					<ul>
+						<li>
+							Introduction
+						</li>
+						<li>
+							What is Match & Link?
+						</li>
+						<li>
+							Match & Link Scenarios
+						</li>
+						<li>
+							History
+						</li>
+						<li>
+							Component Diagram Progression
+						</li>
+						<li>
+							Sequence Diagram Progression
+						</li>
+						<li>
+							Guests Dashboard
+						</li>
+						<li>
+							Deployment Diagram
+						</li>
+						<li>
+							Future Enhancements Diagrams
+						</li>
+						<li>
+							Questions
+						</li>
+					</ul>
+				</section>
 
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<h3>Introduction</h3>
@@ -75,77 +110,105 @@
 						<li class="fragment">
 							If a <span style="color: yellow">matching</span> profile is found, both profiles will be <span style="color: yellow">linked</span> if one of the matching <span style="color: yellow">rules</span> is achieved .
 						</li>
+						<li class="fragment">
+							The result of <span style="color: yellow">linking profiles</span> will help <span style="color: yellow">marketing</span> team with their <span style="color: yellow">campaigns</span>.
+						</li>
 					</ul>
 				</section>
 
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<section>
-						<h3>Core Concept - Scenario 1</h3>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Match & Link - Scenarios</h3>
+						<br>
+						<ul>
+							<li class="fragment">
+								<span style="color: yellow">Orphan</span> profiles matching.
+							</li>
+							<li class="fragment">
+								<span style="color: yellow">Orphan</span> profile matching a <span style="color: yellow">parent</span> profile.
+							</li>
+							<li class="fragment">
+								<span style="color: yellow">Orphan</span> profile matching a <span style="color: yellow">child</span> profile.
+							</li>
+						</ul>
+					</section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Scenario 1 - Orphans Matching</h3>
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
 
-						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link.svg" style="height: 70%;width: 70%;margin: auto;">
-							<!--
-                            { "setup": [
-                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
-                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
-                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
-                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
-                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },
-                            { "element": "#step_6", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "5"} ] }
-                            ]}
-                            -->
+<!--						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link.svg" style="height: 70%;width: 70%;margin: auto;">-->
+<!--							&lt;!&ndash;-->
+<!--                            { "setup": [-->
+<!--                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },-->
+<!--                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },-->
+<!--                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },-->
+<!--                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },-->
+<!--                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] },-->
+<!--                            { "element": "#step_6", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "5"} ] }-->
+<!--                            ]}-->
+<!--                            &ndash;&gt;-->
+<!--						</div>-->
+
+						<div style="margin: auto;">
+							<img src="dist/assets/match-link-scenarios/orphan_match_link.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
 					</section>
-					<section>
-						<h3>Core Concept - Scenario 2</h3>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Scenario 2 - Matching a Parent</h3>
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
 
-						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link_parent.svg" style="height: 70%;width: 70%;margin: auto;">
-							<!--
-                            { "setup": [
-                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
-                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
-                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
-                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
-                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] }
-                            ]}
-                            -->
+<!--						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link_parent.svg" style="height: 70%;width: 70%;margin: auto;">-->
+<!--							&lt;!&ndash;-->
+<!--                            { "setup": [-->
+<!--                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },-->
+<!--                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },-->
+<!--                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },-->
+<!--                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },-->
+<!--                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] }-->
+<!--                            ]}-->
+<!--                            &ndash;&gt;-->
+<!--						</div>-->
+						<div style="margin: auto;">
+							<img src="dist/assets/match-link-scenarios/orphan_match_link_parent.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
 					</section>
-					<section>
-						<h3>Core Concept - Scenario 3</h3>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
-						<span class="fragment"></span>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Scenario 3 - Matching a Child</h3>
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
+<!--						<span class="fragment"></span>-->
 
-						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link_child.svg" style="height: 70%;width: 70%;margin: auto;">
-							<!--
-                            { "setup": [
-                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },
-                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },
-                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },
-                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },
-                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] }
-                            ]}
-                            -->
+<!--						<div data-animate data-src="dist/assets/match-link-scenarios/orphan_match_link_child.svg" style="height: 70%;width: 70%;margin: auto;">-->
+<!--							&lt;!&ndash;-->
+<!--                            { "setup": [-->
+<!--                            { "element": "#step_1", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "0"} ] },-->
+<!--                            { "element": "#step_2", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "1"} ] },-->
+<!--                            { "element": "#step_3", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "2"} ] },-->
+<!--                            { "element": "#step_4", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "3"} ] },-->
+<!--                            { "element": "#step_5", "modifier": "attr", "parameters": [ {"class": "fragment", "data-fragment-index": "4"} ] }-->
+<!--                            ]}-->
+<!--                            &ndash;&gt;-->
+<!--						</div>-->
+						<div style="margin: auto;">
+							<img src="dist/assets/match-link-scenarios/orphan_match_link_parent.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
 					</section>
 
 				</section>
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<section>
-						<h3>History ⏳</h3>
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>History</h3>
 						<br>
 						<p>
 							Existing Node.js microservice, <span style="color: yellow">ms-guest</span>, used to proxy SOAP requests to an <span style="color: yellow">IBM MDM AE</span>.
@@ -160,7 +223,7 @@
 								MDM AE: Delivers data matching, data exploration and visualization for business users
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Issues</h3>
 						<br>
 						<ul>
@@ -193,7 +256,7 @@
 						</aside>
 					</section>
 
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Issues Cont.</h3>
 						<br>
 						<ul>
@@ -221,11 +284,11 @@
 					</section>
 				</section>
 
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<section>
-						<h3>Existing Solution Revamp</h3>
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Component Diagram Progression</h3>
 						<br>
-						<p>Component Diagram Stages</p>
+						<p>Existing Solution Revamp</p>
 						<br>
 						<ul>
 							<li>
@@ -242,7 +305,7 @@
 							</li>
 						</ul>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Existing Architecture</h4>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/component/mdm-ae.svg" alt="mdm ae old" style="height: 500px"/>
@@ -256,7 +319,7 @@
 							</p>
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Suggested Architecture</h4>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/component/mdm-ae-retire.svg" alt="mdm ae old" style="height: 500px"/>
@@ -272,7 +335,7 @@
 							</p>
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Proxy to New Service</h4>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/component/mdm-ae-proxy.svg" alt="mdm ae old" style="height: 500px"/>
@@ -295,7 +358,7 @@
 							</p>
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Component Diagram - Kafka</h4>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/component/mdm-ae-kafka.svg" alt="mdm ae old" style="height: 500px"/>
@@ -316,14 +379,25 @@
 						</aside>
 					</section>
 				</section>
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<section>
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Sequence Diagram Progression</h3>
+						<ul>
+							<li>
+								<span style="color: yellow">Initial</span> Sequence Diagram
+							</li>
+							<li>
+								<span style="color: yellow">Read DB</span> Sequence Diagram
+							</li>
+						</ul>
+					</section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Sequence Diagram - Initial</h3>
 						<div style="margin: auto;">
 							<img class="r-stretch" src="dist/assets/diagrams/sequence/match-link-initial.svg" alt="mdm ae old" style="height: 550px"/>
 						</div>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Guests Service Performance Issues</h3>
 						<p><small>I noticed <span style="color: yellow">high CPU</span> and <span style="color: yellow">Memory Usage</span> in <span style="color: yellow">Guests Service</span> when <span style="color: yellow">Match & Link</span> processor was launched</small></p>
 						</br>
@@ -336,15 +410,15 @@
 							</li>
 						</ul>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Sequence Diagram - Read DB</h3>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/sequence/match-link-read-db.svg" alt="mdm ae old" style="height: 550px"/>
 						</div>
 					</section>
 				</section>
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<section>
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Guests Dashboard</h4>
 						<br>
 						<p>
@@ -363,11 +437,11 @@
 							</p>
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Create a Profile</h4>
 						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_create_guest_profile.mp4" height="570px"></video>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<p>
 							<img src="dist/assets/guests-dashboard/create_guest_profile.png" alt="create guest profile" style="max-width: 100%;height: auto;">
 						</p>
@@ -375,7 +449,7 @@
 							Create a guest profile to validate matching a linking results.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Select an Alternative Name</h4>
 						<p><small>Select available <span style="color: yellow">Alternative name</span> for the given first name to test <span style="color: yellow">fuzzy</span> matching</small></p>
 						<p>
@@ -385,7 +459,7 @@
 							Added a feature to select available alt. names for the given firstName to test the fuzzy match.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Primary Address</h4>
 						<small><span style="color: yellow">Primary address</span> details to validate address matching rules</small>
 						<img src="dist/assets/guests-dashboard/create_guest_profile_cont.png" alt="create guest profile" style="max-width: 100%;height: auto;">
@@ -393,11 +467,11 @@
 							We scroll further down we have the primary address section.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>View Created Profile</h4>
 						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_orphan_profile.mp4" height="570px"></video>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Orphan Profile</h4>
 						<small><span style="color: yellow">Orphan profile</span>, is a profile with no links to other profiles</small>
 						<img src="dist/assets/guests-dashboard/find_orphan_profile.png" alt="find orphan profile">
@@ -405,11 +479,11 @@
 							Click on find tab to retrieve the profile you created, and validate the match & link outcome.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link</h4>
 						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_validate_link.mp4" height="570px"></video>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link</h4>
 						<small>Two profiles are <span style="color: yellow">linked</span>, forming a <span style="color: yellow">parent child relationship</span></small>
 						<img src="dist/assets/guests-dashboard/find_parent_one_linked.png" alt="find one linked profile">
@@ -417,7 +491,7 @@
 							It might take a few seconds to see the matching result since it's an asynchronous process.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link Cont.</h4>
 						<small><span style="color: yellow">Multiple</span> child profiles <span style="color: yellow">linked</span> to the same <span style="color: yellow">parent</span> profile.</small>
 						<img src="dist/assets/guests-dashboard/find_parent_profile_two_linked.png" alt="find two linked profiles">
@@ -425,7 +499,7 @@
 							If you go ahead and create a 3rd profile matching the parent you'd see that in the search result here.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link Cont.</h4>
 						<small><span style="color: yellow">Expand</span> any profile for more details</small>
 						<img src="dist/assets/guests-dashboard/expand_parent_profile.png" alt="expand parent profile">
@@ -442,7 +516,7 @@
 							</p>
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link Cont.</h4>
 						<small><span style="color: yellow">Child</span> profiles have more details about the <span style="color: yellow">matching result</span>.</small>
 						<img src="dist/assets/guests-dashboard/expand_first_child.png" alt="expand child 1 profile">
@@ -450,14 +524,14 @@
 							Here this profile matched the parent profile thru EMAIL_COMBO_1 matching rule.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link Cont.</h4>
 						<img src="dist/assets/guests-dashboard/expand_second_child.png" alt="expand child 2 profile">
 						<aside class="notes">
 							Here this profile matched the parent profile thru PHONE_COMBO_1 matching rule.
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link Cont.</h4>
 						<small><span style="color: yellow">Update profile</span> to trigger <span style="color: yellow">match & link</span> on update event</small>
 						<img src="dist/assets/guests-dashboard/edit_guest_profile.png" alt="edit parent profile">
@@ -466,9 +540,9 @@
 						</aside>
 					</section>
 				</section>
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<section>
-						<h3>Deployment</h3>
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Deployment Diagram</h3>
 						<p><small>Existing <span style="color: yellow">CI/CD</span> pipeline was built using <span style="color: yellow">IBM Urbancode tools</span></small></p>
 						<ul>
 							<li class="fragment">
@@ -479,7 +553,7 @@
 							</li>
 						</ul>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Existing Deployment Diagram</h3>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/deployment/existing-deployment.svg" alt="existing deployment" style="height: 500px"/>
@@ -487,10 +561,29 @@
 					</section>
 				</section>
 
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<section>
-						<h3>Future Enhancements</h3>
-						<h4>Debezium</h4>
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Future Enhancements Diagrams</h3>
+						<ul>
+							<li>
+								<span style="color: yellow">Debezium</span> for DB data stream.
+							</li>
+							<li>
+								In-Memory <span style="color: yellow">Caching</span>.
+							</li>
+							<li>
+								<span style="color: yellow">Component Diagram</span> including Debezium and In-Memory Cache.
+							</li>
+							<li>
+								<span style="color: yellow">Sequence Diagram</span> including Debezium and In-Memory Cache.
+							</li>
+							<li>
+								Move to <span style="color: yellow">AWS</span>
+							</li>
+						</ul>
+					</section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Debezium</h3>
 						<ul>
 							<li class="fragment">
 								<span style="color: yellow">Debezium</span> continuously monitors your <span style="color: yellow">databases</span> and lets any of your applications <span style="color: yellow">stream every row-level</span> change in the same order they were <span style="color: yellow">committed to the database</span>.
@@ -504,9 +597,8 @@
 							<p><small>Doing that correctly - especially when things go wrong - is really tough, and if you get it wrong the data in those system may become inconsistent.</small></p>
 						</aside>
 					</section>
-					<section>
-						<h3>Future Enhancements</h3>
-						<h4>In-Memory Cache</h4>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>In-Memory Cache</h3>
 						<ul>
 							<li class="fragment">
 								Use <span style="color: yellow">In-Memory Cache</span> to mitigate the <span style="color: yellow">load on DB</span>.
@@ -521,17 +613,17 @@
 							<p><small></small></p>
 						</aside>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/component/mdm-ae-debezium.svg" alt="component diagram enhancement" style="height: 600px"/>
 						</div>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/sequence/match-link-enhancement.svg" alt="sequence diagram enhancement" style="height: 600px"/>
 						</div>
 					</section>
-					<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Move to AWS</h4>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/deployment/aws-future-deployment.svg" alt="aws future"/>
@@ -539,10 +631,6 @@
 					</section>
 				</section>
 				<section data-auto-animate data-background-image="dist/assets/background/light-bulb-questions.jpg">
-					<h2>Now it's time for...</h2>
-				</section>
-				<section data-auto-animate data-background-image="dist/assets/background/light-bulb-questions.jpg">
-					<h2>Now it's time for...</h2>
 					<h1>Questions?</h1>
 				</section>
 			</div>
