@@ -20,6 +20,12 @@
 		.left {
 			text-align: left;
 		}
+		.container{
+			display: flex;
+		}
+		.col {
+			flex: 1;
+		}
 	</style>
 	<body>
 		<div class="reveal">
@@ -34,38 +40,47 @@
 				</section>
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<h2>Content</h2>
-					<ul>
-						<li>
-							Introduction
-						</li>
-						<li>
-							What is Match & Link?
-						</li>
-						<li>
-							Match & Link Scenarios
-						</li>
-						<li>
-							History
-						</li>
-						<li>
-							Component Diagram Progression
-						</li>
-						<li>
-							Sequence Diagram Progression
-						</li>
-						<li>
-							Guests Dashboard
-						</li>
-						<li>
-							Deployment Diagram
-						</li>
-						<li>
-							Future Enhancements Diagrams
-						</li>
-						<li>
-							Questions
-						</li>
-					</ul>
+					<div class="container">
+						<div class="col">
+							<ul>
+								<li class="fragment">
+									Introduction
+								</li>
+								<li class="fragment">
+									What is Match & Link?
+								</li>
+								<li class="fragment">
+									Match & Link Scenarios
+								</li>
+								<li class="fragment">
+									History
+								</li>
+								<li class="fragment">
+									Component Diagram Progression
+								</li>
+
+							</ul>
+						</div>
+						<div class="col">
+							<ul>
+								<li class="fragment">
+									Sequence Diagram Progression
+								</li>
+								<li class="fragment">
+									Guests Dashboard
+								</li>
+								<li class="fragment">
+									Deployment Diagram
+								</li>
+								<li class="fragment">
+									Future Enhancements Diagrams
+								</li>
+								<li class="fragment">
+									Questions
+								</li>
+							</ul>
+						</div>
+					</div>
 				</section>
 
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
