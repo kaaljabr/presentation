@@ -1,5 +1,5 @@
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/html">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -12,21 +12,9 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-
 		<link rel="icon" href="/dist/assets/favicon.ico">
 
 	</head>
-	<style>
-		.left {
-			text-align: left;
-		}
-		.container{
-			display: flex;
-		}
-		.col {
-			flex: 1;
-		}
-	</style>
 	<body>
 		<div class="reveal">
 			<div class="slides">
@@ -37,50 +25,45 @@
 					<p>
 						<small>Prepared by <strong>Kareem Aljabr</strong></small>
 					</p>
+					<aside class="notes">
+					</aside>
 				</section>
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<h2>Content</h2>
-					<div class="container">
-						<div class="col">
-							<ul>
-								<li class="fragment">
-									Introduction
-								</li>
-								<li class="fragment">
-									What is Match & Link?
-								</li>
-								<li class="fragment">
-									Match & Link Scenarios
-								</li>
-								<li class="fragment">
-									History
-								</li>
-								<li class="fragment">
-									Component Diagram Progression
-								</li>
-
-							</ul>
-						</div>
-						<div class="col">
-							<ul>
-								<li class="fragment">
-									Sequence Diagram Progression
-								</li>
-								<li class="fragment">
-									Guests Dashboard
-								</li>
-								<li class="fragment">
-									Deployment Diagram
-								</li>
-								<li class="fragment">
-									Future Enhancements Diagrams
-								</li>
-								<li class="fragment">
-									Questions
-								</li>
-							</ul>
-						</div>
-					</div>
+					<ul>
+						<li class="fragment">
+							Introduction
+						</li>
+						<li class="fragment">
+							What is Match & Link?
+						</li>
+						<li class="fragment">
+							Match & Link Scenarios
+						</li>
+						<li class="fragment">
+							History
+						</li>
+						<li class="fragment">
+							Component Diagram Progression
+						</li>
+						<li class="fragment">
+							Sequence Diagram Progression
+						</li>
+						<li class="fragment">
+							Guests Dashboard
+						</li>
+						<li class="fragment">
+							Deployment Diagram
+						</li>
+						<li class="fragment">
+							Future Enhancements Diagrams
+						</li>
+						<li class="fragment">
+							Questions
+						</li>
+					</ul>
+					<aside class="notes">
+					</aside>
 				</section>
 
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -96,6 +79,8 @@
 						<li class="fragment">Taking a <span style="color: yellow">survey</span> in the park</li>
 						<li class="fragment"><span style="color: yellow">Sign up</span> for emails</li>
 					</ul>
+					<aside class="notes">
+					</aside>
 				</section>
 
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -107,6 +92,8 @@
 						<li class="fragment"><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
 						<li class="fragment">Click create account link in a <span style="color: yellow">Ticket confirmation email</span></li>
 					</ul>
+					<aside class="notes">
+					</aside>
 				</section>
 
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -129,6 +116,8 @@
 							The result of <span style="color: yellow">linking profiles</span> will help <span style="color: yellow">marketing</span> team with their <span style="color: yellow">campaigns</span>.
 						</li>
 					</ul>
+					<aside class="notes">
+					</aside>
 				</section>
 
 				<section>
@@ -146,6 +135,8 @@
 								<span style="color: yellow">Orphan</span> profile matching a <span style="color: yellow">child</span> profile.
 							</li>
 						</ul>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Scenario 1 - Orphans Matching</h3>
@@ -168,10 +159,8 @@
                             ]}
                             -->
 						</div>
-
-<!--						<div style="margin: auto;">-->
-<!--							<img src="dist/assets/match-link-scenarios/orphan_match_link.svg" alt="mdm ae old" style="height: 500px"/>-->
-<!--						</div>-->
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Scenario 2 - Matching a Parent</h3>
@@ -192,9 +181,8 @@
                             ]}
                             -->
 						</div>
-<!--						<div style="margin: auto;">-->
-<!--							<img src="dist/assets/match-link-scenarios/orphan_match_link_parent.svg" alt="mdm ae old" style="height: 500px"/>-->
-<!--						</div>-->
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Scenario 3 - Matching a Child</h3>
@@ -215,11 +203,9 @@
                             ]}
                             -->
 						</div>
-<!--						<div style="margin: auto;">-->
-<!--							<img src="dist/assets/match-link-scenarios/orphan_match_link_parent.svg" alt="mdm ae old" style="height: 500px"/>-->
-<!--						</div>-->
+						<aside class="notes">
+						</aside>
 					</section>
-
 				</section>
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -319,6 +305,8 @@
 								Introducing <span style="color: yellow">Kafka</span>
 							</li>
 						</ul>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Existing Architecture</h4>
@@ -405,12 +393,16 @@
 								<span style="color: yellow">Read DB</span> Sequence Diagram
 							</li>
 						</ul>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Sequence Diagram - Initial</h3>
 						<div style="margin: auto;">
 							<img class="r-stretch" src="dist/assets/diagrams/sequence/match-link-initial.svg" alt="mdm ae old" style="height: 550px"/>
 						</div>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Guests Service Performance Issues</h3>
@@ -424,12 +416,16 @@
 								I <span style="color: yellow">redesigned</span> the <span style="color: yellow">solution</span> to add a <span style="color: yellow">read only</span> DB replica.
 							</li>
 						</ul>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Sequence Diagram - Read DB</h3>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/sequence/match-link-read-db.svg" alt="mdm ae old" style="height: 550px"/>
 						</div>
+						<aside class="notes">
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -441,20 +437,22 @@
 						</p>
 						<aside class="notes">
 							<p>
-								We had issues related to writing automation tests to validate Match & Link results. Since it's Asynchronous process.
+								<small>We had issues related to writing automation tests to validate Match & Link results. Since it's Asynchronous process.</small>
 							</p>
 							<p>
-								At that time I was listening to podcasts and one guest was talking about Vue JS. I decided to learn it. I found creating this dashboard
-								a motivation for me to learn it.
+								<small>At that time I was listening to podcasts and one guest was talking about Vue JS. I decided to learn it. I found creating this dashboard
+								a motivation for me to learn it.</small>
 							</p>
 							<p>
-								Deployed on Github. Pages to save money and push code faster.
+								<small>Deployed on GitHub. Pages to save money and push code faster.</small>
 							</p>
 						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Create a Profile</h4>
-						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_create_guest_profile.mp4" height="570px"></video>
+						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_create_guest_profile.mp4" height="570"></video>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<p>
@@ -484,7 +482,9 @@
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>View Created Profile</h4>
-						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_orphan_profile.mp4" height="570px"></video>
+						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_orphan_profile.mp4" height="570"></video>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Orphan Profile</h4>
@@ -496,7 +496,9 @@
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link</h4>
-						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_validate_link.mp4" height="570px"></video>
+						<video data-autoplay loop src="dist/assets/guests-dashboard/guests_dashboard_validate_link.mp4" height="570"></video>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link</h4>
@@ -526,8 +528,8 @@
 								We use Experian to standardize addresses to help with matching
 							</p>
 							<p>
-								Standardizing the address happens in the background and data is saved on the marketing document and it's not shared with
-								the guest. There is a score for standardized address when we call experian and we take the highest score if it's 90+%
+								Standardizing the address happens in the background, and data is saved on the marketing document, and it's not shared with
+								the guest. There is a score for standardized address when we call experian, and we take the highest score if it's 90+%
 							</p>
 						</aside>
 					</section>
@@ -536,14 +538,14 @@
 						<small><span style="color: yellow">Child</span> profiles have more details about the <span style="color: yellow">matching result</span>.</small>
 						<img src="dist/assets/guests-dashboard/expand_first_child.png" alt="expand child 1 profile">
 						<aside class="notes">
-							Here this profile matched the parent profile thru EMAIL_COMBO_1 matching rule.
+							Here this profile matched the parent profile through EMAIL_COMBO_1 matching rule.
 						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Validate Match & Link Cont.</h4>
 						<img src="dist/assets/guests-dashboard/expand_second_child.png" alt="expand child 2 profile">
 						<aside class="notes">
-							Here this profile matched the parent profile thru PHONE_COMBO_1 matching rule.
+							Here this profile matched the parent profile through PHONE_COMBO_1 matching rule.
 						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -554,6 +556,7 @@
 							You can also edit a profile to validate the update scenario
 						</aside>
 					</section>
+
 				</section>
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -567,6 +570,8 @@
 								All <span style="color: yellow">CI/CD configurations</span> were managed by <span style="color: yellow">Devops</span> team. Nothing was accessible to developers.
 							</li>
 						</ul>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Existing Deployment Diagram</h3>
@@ -574,6 +579,8 @@
 							<img src="dist/assets/diagrams/deployment/existing-deployment.svg" alt="existing deployment" style="height: 500px"/>
 						</div>
 					</section>
+					<aside class="notes">
+					</aside>
 				</section>
 
 				<section>
@@ -596,6 +603,8 @@
 								Move to <span style="color: yellow">AWS</span>
 							</li>
 						</ul>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Debezium</h3>
@@ -610,6 +619,8 @@
 						<aside class="notes">
 							<p><small>Why do we need a services that <span style="color: yellow">update the database</span> to <span style="color: yellow">send notifications</span> and <span style="color: yellow">publish messages</span></small></p>
 							<p><small>Doing that correctly - especially when things go wrong - is really tough, and if you get it wrong the data in those system may become inconsistent.</small></p>
+						</aside>
+						<aside class="notes">
 						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -632,26 +643,36 @@
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/component/mdm-ae-debezium.svg" alt="component diagram enhancement" style="height: 600px"/>
 						</div>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/sequence/match-link-enhancement.svg" alt="sequence diagram enhancement" style="height: 600px"/>
 						</div>
+						<aside class="notes">
+						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Move to AWS</h4>
 						<div style="margin: auto;">
 							<img src="dist/assets/diagrams/deployment/aws-future-deployment.svg" alt="aws future"/>
 						</div>
+						<aside class="notes">
+						</aside>
 					</section>
 				</section>
 				<section data-auto-animate data-background-image="dist/assets/background/light-bulb-questions.jpg">
 					<h2>It's time for...</h2>
+					<aside class="notes">
+					</aside>
 				</section>
 				<section data-auto-animate data-background-image="dist/assets/background/light-bulb-questions.jpg">
 					<h2>It's time for...</h2>
 					<h1>Questions?</h1>
 				</section>
+				<aside class="notes">
+				</aside>
 			</div>
 		</div>
 
@@ -673,7 +694,7 @@
 				// Add your config here:
 				// transition: 'convex',
 				transitionSpeed: 'slow',        // slow down slide transitions
-				controlsTutorial: false,        // turn off arrow bumping
+				controlsTutorial: true,        // turn off arrow bumping
 				// controlsLayout: 'edges',        // default 'bottom-right'
 				 //controlsBackArrows: 'visible',  // make previous slide arrow bright instead of faded
 				progress: true,
