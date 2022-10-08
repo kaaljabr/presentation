@@ -15,9 +15,18 @@
 		<link rel="icon" href="/dist/assets/favicon.ico">
 
 	</head>
+	<style>
+		.container{
+			display: flex;
+		}
+		.col {
+			flex: 1;
+		}
+	</style>
 	<body>
 		<div class="reveal">
 			<div class="slides">
+				<!--slide 1-->
 				<section data-background-image="dist/assets/background/aws-gray.jpg">
 					<h2>Match & Link Processor</h2>
 					<br>
@@ -26,85 +35,107 @@
 						<small>Prepared by <strong>Kareem Aljabr</strong></small>
 					</p>
 					<aside class="notes">
+						<p><small>Good morning everyone</small></p>
+						<p><small>My presentation is about Match & Link processor</small></p>
+						<p><small>I designed and developed this processor when I was at Universal</small></p>
 					</aside>
 				</section>
+				<!--slide 2-->
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
 					<h2>Content</h2>
-					<ul>
-						<li class="fragment">
-							Introduction
-						</li>
-						<li class="fragment">
-							What is Match & Link?
-						</li>
-						<li class="fragment">
-							Match & Link Scenarios
-						</li>
-						<li class="fragment">
-							History
-						</li>
-						<li class="fragment">
-							Component Diagram Progression
-						</li>
-						<li class="fragment">
-							Sequence Diagram Progression
-						</li>
-						<li class="fragment">
-							Guests Dashboard
-						</li>
-						<li class="fragment">
-							Deployment Diagram
-						</li>
-						<li class="fragment">
-							Future Enhancements Diagrams
-						</li>
-						<li class="fragment">
-							Questions
-						</li>
-					</ul>
+					<div class="container">
+						<div class="col">
+							<ul>
+								<li class="fragment">
+									Introduction
+								</li>
+								<li class="fragment">
+									What is Match & Link Processor?
+								</li>
+								<li class="fragment">
+									Match & Link Scenarios
+								</li>
+								<li class="fragment">
+									History
+								</li>
+								<li class="fragment">
+									Component Diagram Progression
+								</li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul>
+								<li class="fragment">
+									Sequence Diagram Progression
+								</li>
+								<li class="fragment">
+									Guests Dashboard
+								</li>
+								<li class="fragment">
+									Deployment Diagram
+								</li>
+								<li class="fragment">
+									Future Enhancements Diagrams
+								</li>
+								<li class="fragment">
+									Questions
+								</li>
+							</ul>
+						</div>
+					</div>
 					<aside class="notes">
+						<p><small>My presentation is divided into separate sections</small></p>
 					</aside>
 				</section>
-
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<h3>Introduction</h3>
-					<p>
-						At <a href="https://www.universalorlando.com/" target="_blank">Universal Orlando Resort</a> guests can have either a profile or an account.
-					</p>
-					<p style="text-align: left">A <span style="color: yellow">profile</span> is created when you:</p>
-					<ul>
-						<li class="fragment">Buy a ticket and <span style="color: yellow">checkout</span> as a guest</li>
-						<li class="fragment">Book a hotel room and <span style="color: yellow">checkout</span> as a guest</li>
-						<li class="fragment">Buy a ticket at the <span style="color: yellow">Theme Park</span> gate</li>
-						<li class="fragment">Take a <span style="color: yellow">survey</span> in the park</li>
-						<li class="fragment"><span style="color: yellow">Sign up</span> for emails</li>
-					</ul>
-					<aside class="notes">
-					</aside>
+				<!--slide 3-->
+				<section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Introduction</h3>
+						<p>
+							<span style="color: yellow">Match & Link</span> is the process of <span style="color: yellow">matching</span> profiles or accounts and <span style="color: yellow">linking</span> them.
+						</p>
+						<p>
+							At <a href="https://www.universalorlando.com/" target="_blank">Universal Orlando Resort</a> guests can have either a profile or an account.
+						</p>
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Introduction Cont.</h3>
+						<p style="text-align: left">A <span style="color: yellow">profile</span> is created when you:</p>
+						<ul>
+							<li class="fragment">Buy a ticket and <span style="color: yellow">checkout</span> as a guest</li>
+							<li class="fragment">Book a hotel room and <span style="color: yellow">checkout</span> as a guest</li>
+							<li class="fragment">Buy a ticket at the <span style="color: yellow">Theme Park</span> gate</li>
+							<li class="fragment">Take a <span style="color: yellow">survey</span> in the park</li>
+							<li class="fragment"><span style="color: yellow">Sign up</span> for emails</li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
+					<section data-background-image="dist/assets/background/black_chalk.jpg">
+						<h3>Introduction Cont.</h3>
+						<br>
+						<p style="text-align: left">An <span style="color: yellow">account</span> is created when you:</p>
+						<ul style="">
+							<li class="fragment">Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span> app</li>
+							<li class="fragment"><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
+							<li class="fragment">Click create account link in a <span style="color: yellow">Ticket confirmation email</span></li>
+						</ul>
+						<aside class="notes">
+						</aside>
+					</section>
 				</section>
-
+				<!--slide 4-->
 				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<h3>Introduction Count.</h3>
-					<br>
-					<p style="text-align: left">An <span style="color: yellow">account</span> is created when you:</p>
-					<ul style="">
-						<li class="fragment">Sign up using the <span style="color: yellow">website</span> or <span style="color: yellow">mobile</span> app</li>
-						<li class="fragment"><span style="color: yellow">Checkout</span> as a guest then provide a password to create an account</li>
-						<li class="fragment">Click create account link in a <span style="color: yellow">Ticket confirmation email</span></li>
-					</ul>
-					<aside class="notes">
-					</aside>
-				</section>
-
-				<section data-background-image="dist/assets/background/black_chalk.jpg">
-					<h3>What is Match & Link?</h3>
+					<h3>What is Match & Link Processor?</h3>
 					<br>
 					<ul>
 						<li class="fragment">
 							<span style="color: yellow">Asynchronous</span> process (worker)
 						</li>
 						<li class="fragment">
-							<span style="color: yellow">Consumes Kafka</span> events <span class="fragment"><span style="color: yellow">produced</span> by guest profile service.</span>
+							<span style="color: yellow">Consumes Kafka</span> events <span style="color: yellow">produced</span> by guest profile service.
 						</li>
 						<li class="fragment">
 							When a profile is <span style="color: yellow">created or updated</span> it searches for a matching profile.
@@ -119,7 +150,7 @@
 					<aside class="notes">
 					</aside>
 				</section>
-
+				<!--slide 5-->
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Match & Link - Scenarios</h3>
@@ -160,6 +191,8 @@
                             -->
 						</div>
 						<aside class="notes">
+							<p><small>Profile A is created or updated, that matches Profile B</small></p>
+							<p><small>Profile B is going to be linked with Profile A</small></p>
 						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
@@ -207,6 +240,7 @@
 						</aside>
 					</section>
 				</section>
+				<!--slide 6-->
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>History</h3>
@@ -256,7 +290,6 @@
 							</p>
 						</aside>
 					</section>
-
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Issues Cont.</h3>
 						<br>
@@ -284,7 +317,7 @@
 						</aside>
 					</section>
 				</section>
-
+				<!--slide 7-->
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Component Diagram Progression</h3>
@@ -382,6 +415,7 @@
 						</aside>
 					</section>
 				</section>
+				<!--slide 8-->
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Sequence Diagram Progression</h3>
@@ -428,6 +462,7 @@
 						</aside>
 					</section>
 				</section>
+				<!--slide 9-->
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h4>Guests Dashboard</h4>
@@ -556,8 +591,8 @@
 							You can also edit a profile to validate the update scenario
 						</aside>
 					</section>
-
 				</section>
+				<!--slide 10-->
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Deployment Diagram</h3>
@@ -588,7 +623,7 @@
 						</aside>
 					</section>
 				</section>
-
+				<!--slide 11-->
 				<section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
 						<h3>Future Enhancements Diagrams</h3>
@@ -668,6 +703,7 @@
 						</aside>
 					</section>
 				</section>
+				<!--slide 12-->
 				<section data-auto-animate data-background-image="dist/assets/background/light-bulb-questions.jpg">
 					<h2>It's time for...</h2>
 					<aside class="notes">
