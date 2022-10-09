@@ -46,38 +46,38 @@
 					<div class="container">
 						<div class="col">
 							<ul>
-								<li class="fragment">
+								<li>
 									Introduction
 								</li>
-								<li class="fragment">
+								<li>
 									What is Match & Link Processor?
 								</li>
-								<li class="fragment">
+								<li>
 									Match & Link Scenarios
 								</li>
-								<li class="fragment">
+								<li>
 									History
 								</li>
-								<li class="fragment">
+								<li>
 									Component Diagram Progression
 								</li>
 							</ul>
 						</div>
 						<div class="col">
 							<ul>
-								<li class="fragment">
+								<li>
 									Sequence Diagram Progression
 								</li>
-								<li class="fragment">
+								<li>
 									Guests Dashboard
 								</li>
-								<li class="fragment">
+								<li>
 									Deployment Diagram
 								</li>
-								<li class="fragment">
+								<li>
 									Future Enhancements Diagrams
 								</li>
-								<li class="fragment">
+								<li>
 									Questions
 								</li>
 							</ul>
@@ -85,6 +85,7 @@
 					</div>
 					<aside class="notes">
 						<p><small>My presentation is divided into separate sections</small></p>
+						<p><small>What is Match & Link</small></p>
 					</aside>
 				</section>
 				<!--slide 3-->
@@ -94,8 +95,11 @@
 						<p>
 							<span style="color: yellow">Match & Link</span> is the process of <span style="color: yellow">matching</span> profiles or accounts and <span style="color: yellow">linking</span> them.
 						</p>
+						<p class="fragment">
+							The result of <span style="color: yellow">linking profiles</span> will help <span style="color: yellow">marketing</span> team with their <span style="color: yellow">campaigns</span>.
+						</p>
 						<p>
-							At <a href="https://www.universalorlando.com/" target="_blank">Universal Orlando Resort</a> guests can have either a profile or an account.
+							<small>At <a href="https://www.universalorlando.com/" target="_blank">Universal Orlando Resort</a> guests can have either a profile or an account.</small>
 						</p>
 						<aside class="notes">
 						</aside>
@@ -142,9 +146,6 @@
 						</li>
 						<li class="fragment">
 							If a <span style="color: yellow">matching</span> profile is found, both profiles will be <span style="color: yellow">linked</span> if one of the matching <span style="color: yellow">rules</span> is achieved .
-						</li>
-						<li class="fragment">
-							The result of <span style="color: yellow">linking profiles</span> will help <span style="color: yellow">marketing</span> team with their <span style="color: yellow">campaigns</span>.
 						</li>
 					</ul>
 					<aside class="notes">
@@ -351,12 +352,11 @@
 							<img src="dist/assets/diagrams/component/mdm-ae.svg" alt="mdm ae old" style="height: 500px"/>
 						</div>
 						<aside class="notes">
-							<p>
-								As I mentioned earlier we had many issues with this design
-							</p>
-							<p>
-								The synchronous M&M. Adding new features to MDM AE was challenging. Production issues due to performance especially on event days.
-							</p>
+							<p><small>Clients communicate to our microservices thru an API Gateway</small></p>
+							<p><small>We need to authenticate with LDAP in case of a logged in account</small></p>
+							<p><small>Adding new features to MDM AE was challenging.</small></p>
+							<p><small>Slow synchronous M&M</small></p>
+							<p><small>Production issues due to performance especially on event days.</small></p>
 						</aside>
 					</section>
 					<section data-background-image="dist/assets/background/black_chalk.jpg">
